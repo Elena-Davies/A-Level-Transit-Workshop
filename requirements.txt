@@ -1,6 +1,7 @@
 streamlit==1.22.0
 matplotlib==3.7.1
 numpy==1.21.5
+arviz==0.17.0
 pytransit==2.6.0
 celerite==0.4.2
 emcee==3.1.4
