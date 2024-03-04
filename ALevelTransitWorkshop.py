@@ -13,7 +13,8 @@ from matplotlib.animation import FuncAnimation
 
 # Title the app
 st.title('A-Level Transit Method: The Transit Trail!')
-
+import pip
+st.write(pip.__version__)
 # adding pages
 st.write("# Welcome to The Transit Trail!")
 st.sidebar.success("Select a level above.")
