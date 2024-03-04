@@ -115,7 +115,7 @@ if section1==2:
         #Convert the animation to HTML format using to_jshtml() method of the FuncAnimation object.
         #html = ani.to_html5_video()
         # Display the animation in Streamlit
-        components.html(ani.to_jshtml(), height=1000, width=3000)
+        components.html(ani.to_jshtml(), height=100, width=300)
     
     # Animation 
     progress_bar.empty() # clear elements by calling them empty
