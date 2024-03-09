@@ -1,7 +1,7 @@
 streamlit==1.22.0
 matplotlib==3.7.1
 numpy==1.21.5
-celerite==0.4.2
+#celerite==0.4.2
 #PyTransit==2.6.0
 #emcee==3.1.4
 #corner==2.2.2
