@@ -1,0 +1,4 @@
+PyTransit==2.6.0
+celerite==0.4.2
+emcee==3.1.4
+corner==2.2.2
