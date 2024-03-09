@@ -1,5 +1,0 @@
-PyTransit==2.6.0
-emcee==3.1.4
-corner==2.2.2
-arviz==0.17.0
-
