@@ -16,9 +16,7 @@ st.title('A-Level Transit Method: The Transit Trail!')
 
 st.write("# Welcome to The Transit Trail!")
 
-video_file = open('planet_orbit_animation.mp4 ', 'rb')
-video_bytes = video_file.read()
-st.video(video_bytes)
+st.video('planet_orbit_animation.mp4')
 
 st.write('You have been tasked with finding habitable exoplanets to find potential signs of life on other planets!')
 st.write('However, before you can find E.T., you have to learn what to look for and how!')
