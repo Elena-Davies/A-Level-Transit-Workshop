@@ -65,7 +65,7 @@ if section1==2:
     planet_radius = 0.3
     orbit_radius = 3.0
     angular_velocity = 0.02
-    frames = 400
+    frames = 315
     with _lock:
         # Create figure and subplots
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
