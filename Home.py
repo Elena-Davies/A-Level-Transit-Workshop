@@ -45,7 +45,6 @@ with _lock:
             x_planet = orbit_radius * np.cos(angle)
             y_planet = orbit_radius * np.sin(angle)
             planet_patch.set_center((x_planet, y_planet))
-            x_above, y_above = orbit_radius * np.sin(angle), -orbit_radius * np.cos(angle)
             # Check if the planet is behind the star in both views
             if np.pi/2 < angle % (2 * np.pi) < 3 * np.pi / 2:
                 planet_patch.set_alpha(0.2)
