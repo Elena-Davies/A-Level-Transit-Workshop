@@ -53,14 +53,14 @@ with _lock:
                 planet_patch.set_alpha(1.0)
             return planet_patch
     
-    # Create animation
-        ani = FuncAnimation(fig, update, frames=frames, blit=True)
-        # Convert animation to HTML
-        #Convert the animation to HTML format using to_jshtml() method of the FuncAnimation object.
-        #html = ani.to_html5_video()
-        # Display the animation in Streamlit
-        components.html(ani.to_jshtml(), height=100, width=300)
-    
+# Create animation
+ani = FuncAnimation(fig, update, frames=frames, blit=True)
+# Convert animation to HTML
+#Convert the animation to HTML format using to_jshtml() method of the FuncAnimation object.
+#html = ani.to_html5_video()
+# Display the animation in Streamlit
+components.html(ani.to_jshtml(), height=100, width=300)
+
 
 st.write('You have been tasked with finding habitable exoplanets to find potential signs of life on other planets!')
 st.write('However, before you can find E.T., you have to learn what to look for and how!')
