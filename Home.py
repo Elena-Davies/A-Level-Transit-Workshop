@@ -16,7 +16,7 @@ st.title('A-Level Transit Method: The Transit Trail!')
 
 st.write("# Welcome to The Transit Trail!")
 
-video_file = open('planet_orbit_animation.mp4, ')
+video_file = open('planet_orbit_animation.mp4 ', 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
 
