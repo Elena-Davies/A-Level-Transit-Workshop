@@ -81,6 +81,13 @@ if section1==2:
     st.markdown("Imagine you're standing far away and watching a distant star. Now, if a planet passes in front of that star from your perspective, you will see a tiny shadow. This is the planet blocking some of the star's light! Have a look at the plot below of a planet going around a star.")
     st.markdown("Astronomers can detect this because they see a small dip in the star's brightness. By carefully observing these dips in brightness over time, astronomers can figure out if there might be a planet orbiting that star. They can also learn about the size of the planet, how long it takes to orbit its star, and sometimes even its atmosphere!")
     st.markdown("Astronomers call this a transit! It occurs when an exoplanet passes directly in front of its host star as viewed from Earth.")
+    st.markdown("The transit method is a powerful technique used by astronomers to detect exoplanets!")
+    st.markdown("However, the transit method can produce something called False Positives. This is where astronomers think they have detected an exoplanet but it is actually something else that they've detected. For example, astronomers shoul observe multiple transits as it means it's more likely that the dip in brightness is due to an exoplanet and not the star's activity or instrumental noise.")
+    st.markdown("Side mission: What is noise? Noise is a technical term for unwanted variations in data that arise from the instruments used to collect data! The instruments are not always perfect and remember they are trying to measure things thousands of light-years away!")
+    st.markdown("By measuring multiple transits, astronomers can also find the orbital period of the planet, which leads to the exoplanet's distance from its host star (think Kepler's laws)!")
+    st.markdown("There are other limitations to the transit method, too. One being the bias towards exoplanets that orbit close to their host stars. This is because if the star was too far away then it would block out so little light that it would be very difficult to detect! This means that the transit method is more suited to rocky planets (like Earth!), however, that also means that you're more likely to find planets within the Goldilocks Zone with this method, good news for alien hunters!")
+    st.markdown("Side mission: The Goldilocks Zone is the range of distances that a planet could potentially have the right conditions suitable for supporting liquid water on its surface.")
+    
     st.markdown("Ready to proceed to the next level? Answer the questions below!")
 
     # Define Question 1.2.1 and options
