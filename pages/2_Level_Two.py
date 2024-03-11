@@ -11,6 +11,10 @@ from matplotlib.backends.backend_agg import RendererAgg
 _lock = RendererAgg.lock
 from matplotlib.animation import FuncAnimation
 
+git clone https://github.com/hpparvi/PyTransit.git
+cd PyTransit
+pip install .
+
 st.markdown('# Level Two: Transit Curve Adventure')
 st.sidebar.header("Level Two")
 st.write('Level Two: Cloudy (with no chance of meatballs), rocky terrain and with 50% chance of rain!')
