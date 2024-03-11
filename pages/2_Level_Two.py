@@ -12,8 +12,6 @@ _lock = RendererAgg.lock
 from matplotlib.animation import FuncAnimation
 
 git clone https://github.com/hpparvi/PyTransit.git
-cd PyTransit
-pip install .
 
 st.markdown('# Level Two: Transit Curve Adventure')
 st.sidebar.header("Level Two")
