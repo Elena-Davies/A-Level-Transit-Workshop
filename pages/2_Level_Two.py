@@ -256,7 +256,7 @@ if section2==5:
     st.write(question2_1_2)
     st.write(options2_1_2)
      # Display Question 2.2.1 and options
-    selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:")
+    selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q')
     # Check the selected option
     if selected_option2_2_2 == "1":
         st.write("Correct! :)")

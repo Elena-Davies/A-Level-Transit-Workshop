@@ -29,14 +29,14 @@ st.sidebar.header("Level One")
 st.write("Level One: clear, smooth terrain with 10% chance of rain!")
 
 # Define section titles
-sectiontitles1 = ['Mission One', 'Mission Two', 'Level One Questions']
+sectiontitles1 = ['Mission One', 'Mission Two']
 
 # Define section titles
 def sectiontitle(number):
     return "{0}: {1}".format(number, sectiontitles1[number-1])
 
 # Define section
-section1 = st.radio('Select mission:', [1,2,3], format_func=sectiontitle)
+section1 = st.radio('Select mission:', [1,2], format_func=sectiontitle)
 
 # Write section headers
 st.markdown("## {}".format(sectiontitle(section1)))
@@ -51,9 +51,27 @@ if section1==1:
     st.write('As a result, astronomers have developed numerious ways to find these exoplanets, such as the radial velocity method (which detects the gravitational wobble of a star caused by its orbiting planet), direct imaging (which is capturing an image of the exoplanet) and the transit method, which is our focus of today!')
     st.write("So then, what is the transit method? Well, the transit method is a way astronomers detect exoplanets.")
     st.write('The picture above shows an illustration of an exoplanet called K2-18 b. It was found using the transit method and could potentially have life on it! We will be looking at this exoplanet a lot in our studies!')
-    st.write('Talking of studies, if you are ready to continue to the next mission, use select Mission Two from above!')
+    st.write('Answer the question below by putting the number of the option you think is the answer!')
 
-    # Define Question 1.1.1 and options
+    question1_1_1 = "What is the transit method used for?"
+    st.write(question1_1_1)
+    options1_1_1 = ["Detecting exoplanets", "Detecting comets", "Studying asteroids", "Observing galaxies"]
+    st.write(options1_1_1)
+    # Display Question 1.1.1 and options
+    selected_option1_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q1_1_1')
+    # Check the selected option
+    if selected_option1_1_1 == "0":
+        st.write("Correct! The transit method is used for detecting exoplanets. Mission One complete! Provide to your next Mission :)")
+    else:
+        # Provide a hint
+        if selected_option1_1_1 == "1":
+            st.write("Try again! Re-read the Mission One details.")
+        elif selected_option1_1_1 == "2":
+            st.write("Try again! Re-read the Mission One details.")
+        elif selected_option1_1_1 == "3":
+            st.write("Try again! Re-read the Mission One details.")
+
+    
 
 if section1==2:
     '''
@@ -131,26 +149,7 @@ if section1==2:
     st.markdown("The animation above shows a planet orbiting a star!")
     st.markdown("Imagine you're standing far away and watching a distant star. Now, if a planet passes in front of that star from your perspective, you will see a tiny shadow. This is the planet blocking some of the star's light! Have a look at the plot below of a planet going around a star.")
     st.markdown("Astronomers can detect this because they see a small dip in the star's brightness. By carefully observing these dips in brightness over time, astronomers can figure out if there might be a planet orbiting that star. They can also learn about the size of the planet, how long it takes to orbit its star, and sometimes even its atmosphere!")
-    st.markdown("Ready to proceed to the next level? Answer the questions in the next section!")
-
-if section1==3:
-    question1_1_1 = "What is the transit method used for?"
-    st.write(question1_1_1)
-    options1_1_1 = ["Detecting exoplanets", "Detecting comets", "Studying asteroids", "Observing galaxies"]
-    st.write(options1_1_1)
-    # Display Question 1.1.1 and options
-    selected_option = st.text_input("Type the number (0-3) corresponding to your solution:")
-    # Check the selected option
-    if selected_option == "0":
-        st.write("Correct! The transit method is used for detecting exoplanets. Mission One complete! Provide to your next Mission :)")
-    else:
-        # Provide a hint
-        if selected_option == "1":
-            st.write("Try again! Re-read the Mission One details.")
-        elif selected_option == "2":
-            st.write("Try again! Re-read the Mission One details.")
-        elif selected_option == "3":
-            st.write("Try again! Re-read the Mission One details.")
+    st.markdown("Ready to proceed to the next level? Answer the questions below!")
 
     # Define Question 1.2.1 and options
     question1_2_1 = "What is a transit?"
@@ -158,7 +157,7 @@ if section1==3:
     options1_2_1 = ["The movement of stars across the sky during the night", "The passage of an exoplanet in front of its parent star", "The alignment of multiple planets in a solar system", "The change in brightness of a star caused by its rotation"]
     st.write(options1_2_1)
     # Display Question 1.2.1 and options
-    selected_option1_2_1 = st.text_input("Type the number (0-3) corresponding to your solution:")
+    selected_option1_2_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q1_2_1')
     # Check the selected option
     if selected_option1_2_1 == "1":
         st.write("Correct! A transit is the passage of an exoplanet in front of its parent star. :)")
@@ -177,7 +176,7 @@ if section1==3:
     options1_2_2 = ["By measuring changes in the star's colour", "By observing fluctuations in the exoplanet's size", "By detecting dips in the star's brightness when an exoplanet passes in front of it", "By analysing the chnage in the star's temperature"]
     st.write(options1_2_2)
     # Display Question 1.2.2 and options
-    selected_option1_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:")
+    selected_option1_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q1_2_2')
     # Check the selected option
     if selected_option1_2_2 == "2":
         st.write("Correct! The transit method detects exoplanets by detecting dips in the star's brightness when an exoplanet passes in front of it. :)")
@@ -196,7 +195,7 @@ if section1==3:
     options1_2_3 = ["To determine the colour of the exoplanet", "To calculate the distance between the exoplanet and the star", "To confirm the presence of the exoplanet", "To estimate the exoplanet's composition"]
     st.write(options1_2_3)
     # Display Question 1.2.3 and options
-    selected_option1_2_3 = st.text_input("Type the number (0-3) corresponding to your solution:")
+    selected_option1_2_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q1_2_3')
     # Check the selected option
     if selected_option1_2_3 == "2":
         st.write("Correct! It is important for astronomers to observe multiple transits of an exoplanet so they can confirm the presence of the exoplanet. :)")
@@ -215,7 +214,7 @@ if section1==3:
     options1_2_4 = ["It can only detect large exoplanets", "It cannot detect exoplanets that are too far from their star", "It cannot detect exoplanets with irregular orbits", "It cannot detect exoplanets that are too close to their stars"]
     st.write(options1_2_4)
     # Display Question 1.2.4 and options
-    selected_option1_2_4 = st.text_input("Type the number (0-3) corresponding to your solution:")
+    selected_option1_2_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q1_2_4')
     # Check the selected option
     if selected_option1_2_4 == "3":
         st.write("Correct! A limitation of the transit method in detecting exoplanets is that it cannot detect exoplanets that are too close to their stars. :)")
