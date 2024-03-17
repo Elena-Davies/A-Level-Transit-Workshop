@@ -145,6 +145,8 @@ if section2==2:
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
 
 if section2==3:
+    tm = QuadraticModel() # a model that uses two limb-darkening coefficients
+    tm.set_data(t)
     st.write('Different transit events can tell you how far away the planet is from the star! This is all due to perspective. For example, if you cover a light source with a shield that is right in front of the light source it will block a lot of light but if you place the shield very far from the light source it will only block some of the light. See this in action with the interactive plot below!')
     per = st.slider("Value for period", 1.0, 50.0, 5.0)
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b, i=inc18b)
@@ -205,6 +207,7 @@ if section2==3:
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
     tlong=np.linspace(0,5,10000)
+    tm = QuadraticModel() # a model that uses two limb-darkening coefficients
     tm.set_data(tlong)
 
     per = st.slider('Values for the period', 1.0, 2.0, 0.01)
