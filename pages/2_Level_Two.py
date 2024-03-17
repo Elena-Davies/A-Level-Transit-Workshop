@@ -85,6 +85,7 @@ if section2==2:
     tm = QuadraticModel() # a model that uses two limb-darkening coefficients
     t = np.linspace(-0.1, 0.1, 1200)
     tm.set_data(t)
+
     # slider
     k = st.slider("Value for radius of planet over radius of star", 0.006, 0.8, 0.1)
     lc5  = tm.evaluate(k=k, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
