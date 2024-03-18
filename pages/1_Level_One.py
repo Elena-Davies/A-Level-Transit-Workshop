@@ -48,7 +48,7 @@ if section1==1:
     selected_option1_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q1_1_1')
     # Check the selected option
     if selected_option1_1_1 == "0":
-        st.write("Correct! The transit method is used for detecting exoplanets. Mission One complete! Provide to your next Mission :)")
+        st.write("Correct! The transit method is used for detecting exoplanets. Mission One complete! Proceed to your next Mission :)")
     else:
         # Provide a hint
         if selected_option1_1_1 == "1":
