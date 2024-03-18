@@ -123,6 +123,7 @@ if section2==2:
     #st.pyplot(lc18b)
     #st.pyplot(lc116b)
     t = np.linspace(0, 5, 1200)  #times at which to calculate light curve (days)
+    st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
 
 '''
     k_txt = st.text_input(f"Enter a ratio of planet to star radius ")
@@ -145,7 +146,7 @@ if section2==2:
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_k)
 ''' 
-    st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
+
 
 if section2==3:
     st.write('Different transit events can tell you how far away the planet is from the star! This is all due to perspective. For example, if you cover a light source with a shield that is right in front of the light source it will block a lot of light but if you place the shield very far from the light source it will only block some of the light. See this in action with the interactive plot below!')
