@@ -76,5 +76,3 @@ with _lock:
 
 st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
 st.image('subplot_transspec.png')
-
-
