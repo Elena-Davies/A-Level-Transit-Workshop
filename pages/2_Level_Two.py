@@ -108,7 +108,7 @@ if section2==2:
     lc132b  = tm.evaluate(k=rp_rs132b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc116b  = tm.evaluate(k=rp_rs116b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     #with _lock:
-    fig_lc = plt.figure('lc')
+    fig_lcs = plt.figure('lc')
     lc391b = plt.plot(t,lc391b,'-o', label='Kepler-391 b')
     lc132b = plt.plot(t,lc132b,'-o', label='Kepler-132 b')
     lc18b = plt.plot(t,lc18b, '-o', label='K2-18 b')
@@ -118,10 +118,10 @@ if section2==2:
     plt.legend();
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    st.pyplot(fig_lc)
-    st.pyplot(lc132b)
-    st.pyplot(lc18b)
-    st.pyplot(lc116b)
+    st.pyplot(fig_lcs)
+    #st.pyplot(lc132b)
+    #st.pyplot(lc18b)
+    #st.pyplot(lc116b)
     t = np.linspace(0, 5, 1200)  #times at which to calculate light curve (days)
 
     k_txt = st.text_input(f"Enter a ratio of planet to star radius ")
