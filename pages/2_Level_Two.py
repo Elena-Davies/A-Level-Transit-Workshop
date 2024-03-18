@@ -129,26 +129,24 @@ if section2==2:
     st.write("Hint: Keep your values between 0.1 and 1")
 
     # Plot the data
-    with _lock:
-        plt.figure(figsize=(8, 6))
-        lc_k  = tm.evaluate(k=k_txt, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-        lc_k = plt.plot(t,lc_k, '-o')
+    #with _lock:
+    plt.figure(figsize=(8, 6))
+    lc_k  = tm.evaluate(k=k_txt, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
+    lc_k = plt.plot(t,lc_k, '-o')
 
-        # Add labels and title
-        plt.ylabel('Relative signal')
-        plt.xlabel('Time (days)')
-        plt.title('Your transit light curve!')
+    # Add labels and title
+    plt.ylabel('Relative signal')
+    plt.xlabel('Time (days)')
+    plt.title('Your transit light curve!')
 
-        # Show the plot
-        plt.minorticks_on();
-        plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-        st.pyplot(lc_k)
+    # Show the plot
+    plt.minorticks_on();
+    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
+    st.pyplot(lc_k)
     
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
 
 if section2==3:
-    tm = QuadraticModel() # a model that uses two limb-darkening coefficients
-    tm.set_data(t)
     st.write('Different transit events can tell you how far away the planet is from the star! This is all due to perspective. For example, if you cover a light source with a shield that is right in front of the light source it will block a lot of light but if you place the shield very far from the light source it will only block some of the light. See this in action with the interactive plot below!')
     per = st.slider("Value for period", 1.0, 50.0, 5.0)
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b, i=inc18b)
