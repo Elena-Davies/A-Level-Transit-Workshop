@@ -66,10 +66,10 @@ x, y = np.loadtxt(data_file, delimiter=',', unpack=True)
 
 # Plot the data
 with _lock:
-    fig = plt.figure('molecules')
-    moleculeplot = plt.plot(x, y, label=selected_molecule)
+    fig_transspec = plt.figure('transspec')
+    transspec = plt.plot(x, y, label=selected_molecule)
     plt.xlabel('Wavelength (micrometers)')
     plt.ylabel('Transit Depth (%)')
     plt.legend()
     # Show plot
-    st.pyplot(moleculeplot)
+    st.pyplot(transspec)
