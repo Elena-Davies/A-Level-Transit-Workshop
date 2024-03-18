@@ -89,18 +89,18 @@ if section2==2:
     # slider
     k = st.slider("Value for radius of planet over radius of star", 0.006, 0.8, 0.1)
     lc5  = tm.evaluate(k=k, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    with _lock:
-        fig_lc=plt.figure('lc')
-        lc5 = plt.plot(t, lc5, '-o')
-        plt.ylabel('Relative signal')
-        plt.xlabel('Time (days)')
-        plt.xlim(-0.1,0.1)
-        plt.ylim(0.5,1.1)
-        # Add minor ticks
-        plt.minorticks_on()
-        # Customise minor tick appearance
-        plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-        st.pyplot(lc5)
+    #with _lock:
+    fig_lc=plt.figure('lc')
+    lc5 = plt.plot(t, lc5, '-o')
+    plt.ylabel('Relative signal')
+    plt.xlabel('Time (days)')
+    plt.xlim(-0.1,0.1)
+    plt.ylim(0.5,1.1)
+    # Add minor ticks
+    plt.minorticks_on()
+    # Customise minor tick appearance
+    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
+    st.pyplot(fig_lc)
     
     st.write('Look at the above slider plot in a different way')
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
