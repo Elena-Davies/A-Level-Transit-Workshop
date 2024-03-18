@@ -72,7 +72,7 @@ with _lock:
     plt.ylabel('Transit Depth (%)')
     plt.legend()
     # Show plot
-    st.pyplot(transspec)
+    st.pyplot(fig_transspec)
 
 st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
 st.image('subplot_transspec.png')
