@@ -130,7 +130,7 @@ if section2==2:
 
     # Plot the data
     #with _lock:
-    plt.figure(figsize=(8, 6))
+    fig_k = plt.figure('fig_k', figsize=(8, 6))
     lc_k  = tm.evaluate(k=k_txt, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc_k = plt.plot(t,lc_k, '-o')
 
@@ -142,7 +142,7 @@ if section2==2:
     # Show the plot
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    st.pyplot(lc_k)
+    st.pyplot(fig_k)
     
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
 
