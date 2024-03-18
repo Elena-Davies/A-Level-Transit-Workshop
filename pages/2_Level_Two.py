@@ -212,29 +212,29 @@ if section2==4:
     per = st.slider('Values for the period', 1.0, 2.0, 0.01)
 
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b*0.05, i=inc18b)
-    with _lock:
-        fig = plt.figure('lc')
-        tlong_plt = plt.plot(tlong,lc, '-o')
-        plt.xlim(0, 5)
-        plt.ylim(0.997,1.001)
-        plt.ylabel('Relative signal')
-        plt.xlabel('Time (days)')
-        # Add minor ticks
-        plt.minorticks_on()
-        plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-        st.pyplot(tlong_plt)
+    #with _lock:
+    fig = plt.figure('lc')
+    tlong_plt = plt.plot(tlong,lc, '-o')
+    plt.xlim(0, 5)
+    plt.ylim(0.997,1.001)
+    plt.ylabel('Relative signal')
+    plt.xlabel('Time (days)')
+    # Add minor ticks
+    plt.minorticks_on()
+    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
+    st.pyplot(tlong_plt)
     
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=2.00, a=ars18b*0.05, i=inc18b)
-    with _lock:
-        fig = plt.figure('lc')
-        tlong_lc18b = plt.plot(tlong,lc18b, '-o')
-        plt.xlim(0, 5)
-        plt.ylim(0.9972,1.0001)
-        plt.ylabel('Relative Flux')
-        plt.xlabel('Time (days)')
-        plt.minorticks_on()
-        plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-        st.pyplot(tlong_lc18b)
+    #with _lock:
+    fig = plt.figure('lc')
+    tlong_lc18b = plt.plot(tlong,lc18b, '-o')
+    plt.xlim(0, 5)
+    plt.ylim(0.9972,1.0001)
+    plt.ylabel('Relative Flux')
+    plt.xlabel('Time (days)')
+    plt.minorticks_on()
+    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
+    st.pyplot(tlong_lc18b)
     
 if section2==5:
     question2_1_1 = "What do scientists look for to confirm the presence of an exoplanet using the transit method?"
@@ -326,5 +326,3 @@ if section2==5:
             st.write("Try again!")
         elif selected_option2_1_5 == "3":
             st.write("Try again!")
-
-    
