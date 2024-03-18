@@ -90,7 +90,7 @@ if section2==2:
     k = st.slider("Value for radius of planet over radius of star", 0.006, 0.8, 0.1)
     lc5  = tm.evaluate(k=k, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     #with _lock:
-    fig_lc=plt.figure('lc')
+    fig_lck=plt.figure('fig_lck')
     lc5 = plt.plot(t, lc5, '-o')
     plt.ylabel('Relative signal')
     plt.xlabel('Time (days)')
@@ -100,7 +100,7 @@ if section2==2:
     plt.minorticks_on()
     # Customise minor tick appearance
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-    st.pyplot(fig_lc)
+    st.pyplot(fig_lck)
     
     st.write('Look at the above slider plot in a different way')
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
@@ -108,7 +108,7 @@ if section2==2:
     lc132b  = tm.evaluate(k=rp_rs132b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc116b  = tm.evaluate(k=rp_rs116b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     #with _lock:
-    fig_lcs = plt.figure('lc')
+    fig_lcs = plt.figure('fig_lcs')
     lc391b = plt.plot(t,lc391b,'-o', label='Kepler-391 b')
     lc132b = plt.plot(t,lc132b,'-o', label='Kepler-132 b')
     lc18b = plt.plot(t,lc18b, '-o', label='K2-18 b')
