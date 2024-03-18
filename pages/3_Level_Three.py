@@ -41,4 +41,35 @@ else:
 st.markdown("In reality, astronomers don't use transits like above to determine if a planet has an atmosphere. Instead, they use the spectra of the star's light! They observe spectral emission and aborption lines to see what molecules the planet is absorbing!")
 
 st.markdown("Take a look at an example of a transmission spectrum of an exoplanet called K2-18 b!")
-st.image('trans_spec_k218b.jpg')
+#st.image('trans_spec_k218b.jpg')
+
+st.markdown("Now let's look at a more detailed plot. Play around with it!")
+
+# Load initial data
+molecule_data = {
+    'CH4': 'CH4 Dataset 2.csv',
+    'H2O': 'H20 Dataset 2.csv',
+    'CO2': 'CO2 Dataset 2.csv',
+    'NH3': 'NH3 Dataset 2.csv',
+    'HCN': 'HCN Dataset 2.csv',
+    'CO': 'CO Dataset 2.csv',
+    'DMS': 'DMS Dataset 2.csv',
+    'CH3Cl': 'CH3Cl Dataset 2.csv'
+}
+
+# Create sliders for molecule selection
+selected_molecule = st.selectbox('Select a molecule:', list(molecule_data.keys()))
+
+# Load data based on selected molecule
+data_file = molecule_data[selected_molecule]
+x, y = np.loadtxt(data_file, delimiter=',', unpack=True)
+
+# Plot the data
+with _lock:
+    fig = plt.figure('molecules')
+    moleculeplot = plt.plot(x, y, label=selected_molecule)
+    plt.xlabel('Wavelength (micrometers)')
+    plt.ylabel('Transit Depth (%)')
+    plt.legend()
+    # Show plot
+    st.pyplot(moleculeplot)
