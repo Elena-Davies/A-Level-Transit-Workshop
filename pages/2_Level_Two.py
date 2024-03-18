@@ -11,6 +11,16 @@ from matplotlib.backends.backend_agg import RendererAgg
 _lock = RendererAgg.lock
 from matplotlib.animation import FuncAnimation
 
+#import PyTransit and some key modules
+import pytransit
+from pytransit import QuadraticModel
+# from pytransit import UniformModel
+from scipy.optimize import minimize
+import numpy as np
+import matplotlib.pyplot as plt
+from astropy import units as u
+from astropy import constants as const
+
 st.markdown('# Level Two: Transit Curve Adventure')
 st.sidebar.header("Level Two")
 st.write('Level Two: Cloudy (with no chance of meatballs), rocky terrain and with 50% chance of rain!')
@@ -31,16 +41,6 @@ st.markdown("## {}".format(sectiontitle(section2)))
 if section2==1:
     # Add text
     st.write('When the planet moves in front of the star, the light of the star dims slightly for a short period of time. Think about when you put your hand in front of a torch and the light gets dimmer! Now, imagine this but the torch is the size of the Sun and your hand is the size of the Earth and both are thousands of kilometres away! This is very hard to see so astronomers have to use sensitive instruments that monitor the brightness of stars and analyse plots called transit light curves to see the dips in brightness. Have a look at the transit light curve of a real exoplanet called K2-18 b below!')
-
-    #import PyTransit and some key modules.
-    import pytransit
-    from pytransit import QuadraticModel
-    # from pytransit import UniformModel
-    from scipy.optimize import minimize
-    import numpy as np
-    import matplotlib.pyplot as plt
-    from astropy import units as u
-    from astropy import constants as const
 
     #enter the parameters needed by the model.
     rp18b = 14271000 #radius of K2-18 b in metres
