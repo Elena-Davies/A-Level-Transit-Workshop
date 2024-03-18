@@ -41,4 +41,4 @@ else:
 st.markdown("In reality, astronomers don't use transits like above to determine if a planet has an atmosphere. Instead, they use the spectra of the star's light! They observe spectral emission and aborption lines to see what molecules the planet is absorbing!")
 
 st.markdown("Take a look at an example of a transmission spectrum of an exoplanet called K2-18 b!")
-st.image('trans spec of k2-18b.jpg')
+st.image('trans_spec_k218b.jpg')
