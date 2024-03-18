@@ -118,7 +118,7 @@ if section2==2:
     plt.legend();
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    st.pyplot(lc391b)
+    st.pyplot(fig_lc)
     st.pyplot(lc132b)
     st.pyplot(lc18b)
     st.pyplot(lc116b)
