@@ -188,23 +188,23 @@ if section2==3:
     x_values = []
     y_values = []
 
-    p = st.text_input(f"Enter a value for the period ")
+    #p = st.text_input(f"Enter a value for the period ")
 
-    st.write('Hint: Keep your values between 1 and 50')
+    #st.write('Hint: Keep your values between 1 and 50')
 
     # Plot the data
     #with _lock:
-    fig = plt.figure(figsize=(8, 6))
-    lc_p  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=p, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    lc_p_plt = plt.plot(t,lc_p, '-o')
+    #fig = plt.figure(figsize=(8, 6))
+    #lc_p  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=p, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
+    #lc_p_plt = plt.plot(t,lc_p, '-o')
     # Add labels and title
-    plt.ylabel('Relative signal')
-    plt.xlabel('Time (days)')
-    plt.title('Your transit light curve!')
+    #plt.ylabel('Relative signal')
+    #plt.xlabel('Time (days)')
+    #plt.title('Your transit light curve!')
     # Show the plot
-    plt.minorticks_on();
-    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    st.pyplot(lc_p_plt)
+    #plt.minorticks_on();
+    #plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
+    #st.pyplot(lc_p_plt)
 
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
