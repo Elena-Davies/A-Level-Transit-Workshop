@@ -168,7 +168,7 @@ if section2==3:
     lc1260d  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=49.8251659648395, a=ars18b, i=inc18b, e=ecc18b, w=w18b) #TOI-1260 d
 
     #with _lock:
-    fig = plt.figure('lc')
+    fig_lcs_per = plt.figure('lcs_per')
 
     lc83c = plt.plot(t,lc83c, '-o', label='K2-83 c') #K2-83 c
     lc1h = plt.plot(t,lc1h,'-o', label='TRAPPIST-1 h') #TRAPPIST-1 h
@@ -179,7 +179,7 @@ if section2==3:
     plt.legend();
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    st.pyplot(lc83c)
+    st.pyplot(fig_lcs_per)
     st.pyplot(lc1h)
     st.pyplot(lc18b)
     st.pyplot(lc1260)
