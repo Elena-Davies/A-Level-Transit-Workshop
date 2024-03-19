@@ -19,7 +19,7 @@ st.markdown("Astronomers are very interested in planets with atmospheres because
 st.markdown("*But how do they know the planet has an atmosphere?*")
 st.markdown(" Look at the two plots of transit light curves below, which one do you think has an atmosphere and which one doesn't?")
 
-st.image('atmosphere.png')
+st.image('Images/atmosphere.png')
 
 question3_1_1 = "Which plot has the atmosphere?"
 options3_1_1=["Plot 1", "Plot 2", "Both plots", "Neither plots"]
