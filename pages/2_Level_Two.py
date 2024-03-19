@@ -215,7 +215,7 @@ if section2==4:
 
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b*0.05, i=inc18b)
     #with _lock:
-    fig = plt.figure('lc')
+    fig_tlong_plt = plt.figure('tlong_plt')
     tlong_plt = plt.plot(tlong,lc, '-o')
     plt.xlim(0, 5)
     plt.ylim(0.997,1.001)
@@ -224,7 +224,7 @@ if section2==4:
     # Add minor ticks
     plt.minorticks_on()
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-    st.pyplot(tlong_plt)
+    st.pyplot(fig_tlong_plt)
     
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=2.00, a=ars18b*0.05, i=inc18b)
     #with _lock:
