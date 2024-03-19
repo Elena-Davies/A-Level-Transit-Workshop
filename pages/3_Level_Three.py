@@ -65,14 +65,14 @@ data_file = molecule_data[selected_molecule]
 x, y = np.loadtxt(data_file, delimiter=',', unpack=True)
 
 # Plot the data
-with _lock:
-    fig_transspec = plt.figure('transspec')
-    transspec = plt.plot(x, y, label=selected_molecule)
-    plt.xlabel('Wavelength (micrometers)')
-    plt.ylabel('Transit Depth (%)')
-    plt.legend()
-    # Show plot
-    st.pyplot(fig_transspec)
+#with _lock:
+fig_transspec = plt.figure('transspec')
+transspec = plt.plot(x, y, label=selected_molecule)
+plt.xlabel('Wavelength (micrometers)')
+plt.ylabel('Transit Depth (%)')
+plt.legend()
+# Show plot
+st.pyplot(fig_transspec)
 
 st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
 st.image('subplot_transspec.png')
