@@ -228,7 +228,7 @@ if section2==4:
     
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=2.00, a=ars18b*0.05, i=inc18b)
     #with _lock:
-    fig = plt.figure('lc')
+    fig_tlong_lc18b = plt.figure('tlong_lc18b')
     tlong_lc18b = plt.plot(tlong,lc18b, '-o')
     plt.xlim(0, 5)
     plt.ylim(0.9972,1.0001)
@@ -236,7 +236,7 @@ if section2==4:
     plt.xlabel('Time (days)')
     plt.minorticks_on()
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-    st.pyplot(tlong_lc18b)
+    st.pyplot(fig_tlong_lc18b)
     
 if section2==5:
     question2_1_1 = "What do scientists look for to confirm the presence of an exoplanet using the transit method?"
