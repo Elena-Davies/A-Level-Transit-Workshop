@@ -153,13 +153,13 @@ if section2==3:
     per = st.slider("Value for period", 1.0, 50.0, 5.0)
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b, i=inc18b)
     #with _lock:
-    fig = plt.figure('lc')
+    fig_lc_plt = plt.figure('lc_plt')
     lc_plt = plt.plot(t, lc, '-o')
     plt.ylabel('Relative signal')
     plt.xlabel('Time (days)')
     plt.minorticks_on()
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
-    st.pyplot(lc_plt)
+    st.pyplot(fig_lc_plt)
 
     st.write('Now, look at a static plot of planets with different orbital periods. Remember that period is the time taken for the exoplanet to complete one orbit around its host star!')
     lc83c  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=10.00102551, a=ars18b, i=inc18b, e=ecc18b, w=w18b) #K2-83 c
