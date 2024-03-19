@@ -75,4 +75,4 @@ plt.legend()
 st.pyplot(fig_transspec)
 
 st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
-st.image('subplot_transspec.png')
+st.image('Images/subplot_transspec.png')
