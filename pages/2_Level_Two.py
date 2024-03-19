@@ -8,7 +8,7 @@ import time
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
 from matplotlib.backends.backend_agg import RendererAgg
-_lock = RendererAgg.lock
+#_lock = RendererAgg.lock
 from matplotlib.animation import FuncAnimation
 
 #import PyTransit and some key modules
