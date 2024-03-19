@@ -62,7 +62,7 @@ if section1==1:
 
 if section1==2:
     
-    st.video('planet_orbit_animation1.mp4')
+    st.video('Images/planet_orbit_animation1.mp4')
 
     st.markdown("The animation above shows a planet orbiting a star!")
     st.markdown("Imagine you're standing far away and watching a distant star. Now, if a planet passes in front of that star from your perspective, you will see a tiny shadow. This is the planet blocking some of the star's light! Have a look at the plot below of a planet going around a star.")
