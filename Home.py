@@ -18,7 +18,7 @@ st.title('A-Level Transit Method: The Transit Trail!')
 
 st.write("# Welcome to The Transit Trail!")
 
-st.video('planet_orbit_animation.mp4')
+st.video('Images/planet_orbit_animation.mp4')
 
 st.write('You have been tasked with finding habitable exoplanets to find potential signs of life on other planets!')
 st.write('However, before you can find E.T., you have to learn what to look for and how!')
