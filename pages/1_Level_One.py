@@ -31,7 +31,7 @@ st.markdown("## {}".format(sectiontitle(section1)))
 if section1==1:
     # Add an image from local file
     caption = 'An illustration of an exoplanet Kb-18 b! The red sphere is the cool dwarf star that it orbits around called K2-18. Illustration: NASA, CSA, ESA, J. Olmsted (STScI), Science: N. Madhusudhan (Cambridge University)'
-    st.image('k218b.jpg', caption='An illustration of an exoplanet Kb-18 b! The red sphere is the cool dwarf star that it orbits around called K2-18. Illustration: NASA, CSA, ESA, J. Olmsted (STScI), Science: N. Madhusudhan (Cambridge University)', output_format="jpeg")
+    st.image('Images/k218b.jpg', caption='An illustration of an exoplanet Kb-18 b! The red sphere is the cool dwarf star that it orbits around called K2-18. Illustration: NASA, CSA, ESA, J. Olmsted (STScI), Science: N. Madhusudhan (Cambridge University)', output_format="jpeg")
     # Add text
     st.write('# Mission One objective: Find out what the transit method is.')
     st.write('Welcome to your first mission! To start off, we need to remember what an exoplanet is, which is simple! An exoplanet, short for "extrasolar planet", is a planet that orbits a star outside of our solar system! This means that these planets are exclusively orbiting other stars in the Milky Way (our galaxy) and beyond. Exoplanets have been able to deepen our understanding of planetary systems and the potential for life beyond our solar system!')
