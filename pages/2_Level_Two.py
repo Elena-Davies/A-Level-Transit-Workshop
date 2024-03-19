@@ -180,9 +180,9 @@ if section2==3:
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_lcs_per)
-    st.pyplot(lc1h)
-    st.pyplot(lc18b)
-    st.pyplot(lc1260)
+    #st.pyplot(lc1h)
+    #st.pyplot(lc18b)
+    #st.pyplot(lc1260)
 
     # Initialise lists to store data
     x_values = []
