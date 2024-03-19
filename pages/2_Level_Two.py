@@ -125,7 +125,7 @@ if section2==2:
     t = np.linspace(0, 5, 1200)  #times at which to calculate light curve (days)
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
 
-'''
+
     k_txt = st.text_input(f"Enter a ratio of planet to star radius ")
 
     st.write("Hint: Keep your values between 0.1 and 1")
@@ -145,7 +145,7 @@ if section2==2:
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_k)
-''' 
+
 
 
 if section2==3:
