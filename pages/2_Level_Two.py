@@ -126,25 +126,25 @@ if section2==2:
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
 
 
-    k_txt = st.text_input(f"Enter a ratio of planet to star radius ")
+    #k_txt = st.text_input(f"Enter a ratio of planet to star radius ")
 
-    st.write("Hint: Keep your values between 0.1 and 1")
+    #st.write("Hint: Keep your values between 0.1 and 1")
 
     # Plot the data
     #with _lock:
-    fig_k = plt.figure('fig_k', figsize=(8, 6))
-    lc_k  = tm.evaluate(k=k_txt, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    lc_k = plt.plot(t,lc_k, '-o')
+    #fig_k = plt.figure('fig_k', figsize=(8, 6))
+    #lc_k  = tm.evaluate(k=k_txt, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
+    #lc_k = plt.plot(t,lc_k, '-o')
 
     # Add labels and title
-    plt.ylabel('Relative signal')
-    plt.xlabel('Time (days)')
-    plt.title('Your transit light curve!')
+    #plt.ylabel('Relative signal')
+    #plt.xlabel('Time (days)')
+    #plt.title('Your transit light curve!')
 
     # Show the plot
-    plt.minorticks_on();
-    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    st.pyplot(fig_k)
+    #plt.minorticks_on();
+    #plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
+    #st.pyplot(fig_k)
 
 
 
