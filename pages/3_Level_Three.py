@@ -47,14 +47,14 @@ st.markdown("Now let's look at a more detailed plot. Play around with it!")
 
 # Load initial data
 molecule_data = {
-    'CH4': 'CH4 Dataset 2.csv',
-    'H2O': 'H20 Dataset 2.csv',
-    'CO2': 'CO2 Dataset 2.csv',
-    'NH3': 'NH3 Dataset 2.csv',
-    'HCN': 'HCN Dataset 2.csv',
-    'CO': 'CO Dataset 2.csv',
-    'DMS': 'DMS Dataset 2.csv',
-    'CH3Cl': 'CH3Cl Dataset 2.csv'
+    'CH4': 'CSV Data/CH4 Dataset 2.csv',
+    'H2O': 'CSV Data/H20 Dataset 2.csv',
+    'CO2': 'CSV Data/CO2 Dataset 2.csv',
+    'NH3': 'CSV Data/NH3 Dataset 2.csv',
+    'HCN': 'CSV Data/HCN Dataset 2.csv',
+    'CO': 'CSV Data/CO Dataset 2.csv',
+    'DMS': 'CSV Data/DMS Dataset 2.csv',
+    'CH3Cl': 'CSV Data/CH3Cl Dataset 2.csv'
 }
 
 # Create sliders for molecule selection
