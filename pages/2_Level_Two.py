@@ -198,8 +198,9 @@ if section2==2:
     # Customise minor tick appearance
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
     st.pyplot(fig_lck)
-    
-    st.write('Look at the above slider plot in a different way')
+    st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
+
+    st.write('Look at the above slider plot in a different way below!')
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc391b  = tm.evaluate(k=rp_rs391b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc132b  = tm.evaluate(k=rp_rs132b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
@@ -216,7 +217,25 @@ if section2==2:
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_lcs)
     t = np.linspace(0, 5, 1200)  #times at which to calculate light curve (days)
-    st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
+    st.write("Answer the question below to complete the mission!")
+
+    question2_2_1 = "In the plot above, which is the largest radius?"
+    st.write(question2_2_1)
+    options2_2_1=["Kepler-391 b", "Kepler-132 b", "K2-18 b", "Kepler-116 b"]
+    st.write(options2_2_1)
+     # Display Question 2.2.1 and options
+    selected_option2_2_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_2_1')
+    # Check the selected option
+    if selected_option2_2_1 == "3":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_1_1 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_1_1 == "1":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_1_1 == "2":
+            st.write("Try again! Have another look at the plot above.")
 
 
 
