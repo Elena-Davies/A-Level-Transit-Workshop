@@ -125,7 +125,7 @@ if section2==1:
         elif selected_option2_1_6 == "2":
             st.write("Try again! Check your numbers!")
         elif selected_option2_1_6 == "3":
-            st.write("Try again!")
+            st.write("Try again! Check your numbers!")
 
     question2_1_3 = "What happens to a star's light during a transit caused by an exoplanet?"
     options2_1_3=["It brightens", "It remains constant", "It dims slightly", "It disappears completely"]
