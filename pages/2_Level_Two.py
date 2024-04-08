@@ -109,6 +109,24 @@ if section2==1:
         elif selected_option2_2_2 == "3":
             st.write("Try again!")
 
+    question2_1_6 = "If the transit of an exoplanet in front of its star causes a change in the star's brightness by 0.05 magnitudes and the star's initial brightness is 13.5 magnitudes, what is its brightness during the transit?"
+    options2_1_6 = ["10.05 magnitudes", "13.45 magnitudes", "9.95 magnitudes", "13.55 magntiudes"]
+    st.write(question2_1_6)
+    st.write(options2_1_6)
+    # Display question and options
+    selected_option2_1_6 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_6')
+    # Check the selected option
+    if selected_option2_1_6 == "1":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint if possible
+        if selected_option2_1_6 == "0":
+            st.write("Try again! Check your numbers!")
+        elif selected_option2_1_6 == "2":
+            st.write("Try again! Check your numbers!")
+        elif selected_option2_1_6 == "3":
+            st.write("Try again!")
+
     question2_1_3 = "What happens to a star's light during a transit caused by an exoplanet?"
     options2_1_3=["It brightens", "It remains constant", "It dims slightly", "It disappears completely"]
     st.write(question2_1_3)
