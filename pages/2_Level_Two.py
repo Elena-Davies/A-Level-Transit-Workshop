@@ -155,7 +155,6 @@ if section2==4:
     per = st.slider('Values for the period', 1.0, 2.0, 0.01)
 
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b*0.05, i=inc18b)
-    #with _lock:
     fig_tlong_plt = plt.figure('tlong_plt')
     tlong_plt = plt.plot(tlong,lc, '-o')
     plt.xlim(0, 5)
