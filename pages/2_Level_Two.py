@@ -5,7 +5,6 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
-#_lock = RendererAgg.lock
 
 #import PyTransit and some key modules
 from pytransit import QuadraticModel
@@ -63,7 +62,6 @@ if section2==1:
 
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     
-    #with _lock:
     fig_lc18b = plt.figure('lc18b')
     lc18b = plt.plot(t,lc18b, '-o', label='K2-18 b')
     plt.grid(True)
@@ -82,7 +80,6 @@ if section2==2:
     # slider
     k = st.slider("Value for radius of planet over radius of star", 0.006, 0.8, 0.1)
     lc5  = tm.evaluate(k=k, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    #with _lock:
     fig_lck=plt.figure('fig_lck')
     lc5 = plt.plot(t, lc5, '-o')
     plt.ylabel('Relative signal')
@@ -100,7 +97,6 @@ if section2==2:
     lc391b  = tm.evaluate(k=rp_rs391b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc132b  = tm.evaluate(k=rp_rs132b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
     lc116b  = tm.evaluate(k=rp_rs116b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    #with _lock:
     fig_lcs = plt.figure('fig_lcs')
     lc391b = plt.plot(t,lc391b,'-o', label='Kepler-391 b')
     lc132b = plt.plot(t,lc132b,'-o', label='Kepler-132 b')
@@ -112,32 +108,8 @@ if section2==2:
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_lcs)
-    #st.pyplot(lc132b)
-    #st.pyplot(lc18b)
-    #st.pyplot(lc116b)
     t = np.linspace(0, 5, 1200)  #times at which to calculate light curve (days)
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
-
-
-    #k_txt = st.text_input(f"Enter a ratio of planet to star radius ")
-
-    #st.write("Hint: Keep your values between 0.1 and 1")
-
-    # Plot the data
-    #with _lock:
-    #fig_k = plt.figure('fig_k', figsize=(8, 6))
-    #lc_k  = tm.evaluate(k=k_txt, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    #lc_k = plt.plot(t,lc_k, '-o')
-
-    # Add labels and title
-    #plt.ylabel('Relative signal')
-    #plt.xlabel('Time (days)')
-    #plt.title('Your transit light curve!')
-
-    # Show the plot
-    #plt.minorticks_on();
-    #plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    #st.pyplot(fig_k)
 
 
 
@@ -173,31 +145,11 @@ if section2==3:
     plt.minorticks_on();
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_lcs_per)
-    #st.pyplot(lc1h)
-    #st.pyplot(lc18b)
-    #st.pyplot(lc1260)
 
     # Initialise lists to store data
     x_values = []
     y_values = []
 
-    #p = st.text_input(f"Enter a value for the period ")
-
-    #st.write('Hint: Keep your values between 1 and 50')
-
-    # Plot the data
-    #with _lock:
-    #fig = plt.figure(figsize=(8, 6))
-    #lc_p  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=p, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
-    #lc_p_plt = plt.plot(t,lc_p, '-o')
-    # Add labels and title
-    #plt.ylabel('Relative signal')
-    #plt.xlabel('Time (days)')
-    #plt.title('Your transit light curve!')
-    # Show the plot
-    #plt.minorticks_on();
-    #plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
-    #st.pyplot(lc_p_plt)
 
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
