@@ -84,7 +84,7 @@ if section1==2:
     else:
         # Provide a hint
         if selected_option1_2_1 == "0":
-            st.write("Try again! Re-read the Mission Two details.")
+            st.write("Try again! Re-read the Mission details.")
         elif selected_option1_2_1 == "2":
             st.write("Try again! Re-read the Mission Two details.")
         elif selected_option1_2_1 == "3":

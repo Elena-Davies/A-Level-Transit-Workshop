@@ -71,6 +71,95 @@ if section2==1:
     plt.title('Transit Light Curve');
     st.pyplot(fig_lc18b);
 
+    st.write('Think you got it? Answer the questions below to test your knowledge!')
+
+    question2_1_1 = "What do scientists look for to confirm the presence of an exoplanet using the transit method?"
+    st.write(question2_1_1)
+    options2_1_1=["Change in the star's colour", "Variations in the star's size", "Repeated dips in the star's brightness at regular intervals", "Fluctuations in the star's temperature"]
+    st.write(options2_1_1)
+     # Display Question 2.1.1 and options
+    selected_option2_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_1')
+    # Check the selected option
+    if selected_option2_1_1 == "2":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_1_1 == "0":
+            st.write("Try again!")
+        elif selected_option2_1_1 == "1":
+            st.write("Try again!")
+        elif selected_option2_1_1 == "3":
+            st.write("Try again!")
+
+    question2_1_2 = "When does the planet pass in front of the star?"
+    options2_1_2=["Between -0.100 and -0.075 days", "Between -0.075 and 0.075 days", "Between 0.075 and 0.100 days", "None of the above"]
+    st.write(question2_1_2)
+    st.write(options2_1_2)
+     # Display Question 2.2.1 and options
+    selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_2')
+    # Check the selected option
+    if selected_option2_2_2 == "1":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_2_2 == "0":
+            st.write("Try again!")
+        elif selected_option2_2_2 == "2":
+            st.write("Try again!")
+        elif selected_option2_2_2 == "3":
+            st.write("Try again!")
+
+    question2_1_3 = "What happens to a star's light during a transit caused by an exoplanet?"
+    options2_1_3=["It brightens", "It remains constant", "It dims slightly", "It disappears completely"]
+    st.write(question2_1_3)
+    st.write(options2_1_3)    
+    selected_option2_1_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_3')
+    # Check the selected option
+    if selected_option2_1_3 == "1":
+        st.write("Correct!  :)")
+    else:
+        # Provide a hint
+        if selected_option2_1_3 == "0":
+            st.write("Try again!")
+        elif selected_option2_1_3 == "2":
+            st.write("Try again!")
+        elif selected_option2_1_3 == "3":
+            st.write("Try again!")
+
+    question2_1_4 ="Why does the brightness of a star decrease during a transit?"
+    options2_1_4=["Due to the presence of sunspots on the star's surface", "Because the exoplanet blocks a portion of the star's light as it passes in front of it", "As a result of an error in the data", "Because of fluctuations in the star's internal temperature"]
+    st.write(question2_1_4)
+    st.write(options2_1_4)
+    selected_option2_1_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_1')
+    # Check the selected option
+    if selected_option2_1_4 == "1":
+        st.write("Correct!  :)")
+    else:
+        # Provide a hint
+        if selected_option2_1_4 == "0":
+            st.write("Try again!")
+        elif selected_option2_1_4 == "2":
+            st.write("Try again!")
+        elif selected_option2_1_4 == "3":
+            st.write("Try again!")
+
+    question2_1_5 = "What is represented by the slopes in the transit light curve?"
+    options2_1_5=["Velocity of the exoplanet", "Change in brightness over time", "Atmospheric density of the exoplanet", "None of the above"]
+    st.write(question2_1_5)
+    st.write(options2_1_5)
+    selected_option2_1_5 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_5_1')
+    # Check the selected option
+    if selected_option2_1_5 == "1":
+        st.write("Correct!  :)")
+    else:
+        # Provide a hint
+        if selected_option2_1_5 == "0":
+            st.write("Try again!")
+        elif selected_option2_1_5 == "2":
+            st.write("Try again!")
+        elif selected_option2_1_5 == "3":
+            st.write("Try again!")
+
 if section2==2:
     st.write('Play with the slider below to see how the radius can impact the transit curve in real time! What do you notice? Discuss with the person next to you!')
     tm = QuadraticModel() # a model that uses two limb-darkening coefficients
@@ -177,94 +266,3 @@ if section2==4:
     plt.minorticks_on()
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
     st.pyplot(fig_tlong_lc18b)
-    
-if section2==5:
-    question2_1_1 = "What do scientists look for to confirm the presence of an exoplanet using the transit method?"
-    st.write(question2_1_1)
-    options2_1_1=["Change in the star's colour", "Variations in the star's size", "Repeated dips in the star's brightness at regular intervals", "Fluctuations in the star's temperature"]
-    st.write(options2_1_1)
-     # Display Question 2.1.1 and options
-    selected_option2_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_1')
-    # Check the selected option
-    if selected_option2_1_1 == "2":
-        st.write("Correct! :)")
-    else:
-        # Provide a hint
-        if selected_option2_1_1 == "0":
-            st.write("Try again!")
-        elif selected_option2_1_1 == "1":
-            st.write("Try again!")
-        elif selected_option2_1_1 == "3":
-            st.write("Try again!")
-
-    question2_1_2 = "When does the planet pass in front of the star?"
-    options2_1_2=["Between -0.100 and -0.075 days", "Between -0.075 and 0.075 days", "Between 0.075 and 0.100 days", "None of the above"]
-    st.write(question2_1_2)
-    st.write(options2_1_2)
-     # Display Question 2.2.1 and options
-    selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_2')
-    # Check the selected option
-    if selected_option2_2_2 == "1":
-        st.write("Correct! :)")
-    else:
-        # Provide a hint
-        if selected_option2_2_2 == "0":
-            st.write("Try again!")
-        elif selected_option2_2_2 == "2":
-            st.write("Try again!")
-        elif selected_option2_2_2 == "3":
-            st.write("Try again!")
-
-
-    question2_1_3 = "What happens to a star's light during a transit caused by an exoplanet?"
-    options2_1_3=["It brightens", "It remains constant", "It dims slightly", "It disappears completely"]
-    st.write(question2_1_3)
-    st.write(options2_1_3)    
-    selected_option2_1_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_3')
-    # Check the selected option
-    if selected_option2_1_3 == "1":
-        st.write("Correct!  :)")
-    else:
-        # Provide a hint
-        if selected_option2_1_3 == "0":
-            st.write("Try again!")
-        elif selected_option2_1_3 == "2":
-            st.write("Try again!")
-        elif selected_option2_1_3 == "3":
-            st.write("Try again!")
-
-
-    question2_1_4 ="Why does the brightness of a star decrease during a transit?"
-    options2_1_4=["Due to the presence of sunspots on the star's surface", "Because the exoplanet blocks a portion of the star's light as it passes in front of it", "As a result of an error in the data", "Because of fluctuations in the star's internal temperature"]
-    st.write(question2_1_4)
-    st.write(options2_1_4)
-    selected_option2_1_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_1')
-    # Check the selected option
-    if selected_option2_1_4 == "1":
-        st.write("Correct!  :)")
-    else:
-        # Provide a hint
-        if selected_option2_1_4 == "0":
-            st.write("Try again!")
-        elif selected_option2_1_4 == "2":
-            st.write("Try again!")
-        elif selected_option2_1_4 == "3":
-            st.write("Try again!")
-
-
-    question2_1_5 = "What is represented by the slopes in the transit light curve?"
-    options2_1_5=["Velocity of the exoplanet", "Change in brightness over time", "Atmospheric density of the exoplanet", "None of the above"]
-    st.write(question2_1_5)
-    st.write(options2_1_5)
-    selected_option2_1_5 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_5_1')
-    # Check the selected option
-    if selected_option2_1_5 == "1":
-        st.write("Correct!  :)")
-    else:
-        # Provide a hint
-        if selected_option2_1_5 == "0":
-            st.write("Try again!")
-        elif selected_option2_1_5 == "2":
-            st.write("Try again!")
-        elif selected_option2_1_5 == "3":
-            st.write("Try again!")
