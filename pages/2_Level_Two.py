@@ -146,10 +146,6 @@ if section2==3:
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray');
     st.pyplot(fig_lcs_per)
 
-    # Initialise lists to store data
-    x_values = []
-    y_values = []
-
 
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
