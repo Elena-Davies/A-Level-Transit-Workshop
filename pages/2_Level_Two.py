@@ -230,11 +230,11 @@ if section2==2:
         st.write("Correct! :)")
     else:
         # Provide a hint
-        if selected_option2_1_1 == "0":
+        if selected_option2_2_1 == "0":
             st.write("Try again! Have another look at the plot above.")
-        elif selected_option2_1_1 == "1":
+        elif selected_option2_2_1 == "1":
             st.write("Try again! Have another look at the plot above.")
-        elif selected_option2_1_1 == "2":
+        elif selected_option2_2_1 == "2":
             st.write("Try again! Have another look at the plot above.")
 
 
