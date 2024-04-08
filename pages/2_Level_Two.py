@@ -1,25 +1,18 @@
 #Imports
 import streamlit as st
-import streamlit.components.v1 as components
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import time
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
-from matplotlib.backends.backend_agg import RendererAgg
 #_lock = RendererAgg.lock
-from matplotlib.animation import FuncAnimation
 
 #import PyTransit and some key modules
-import pytransit
 from pytransit import QuadraticModel
 # from pytransit import UniformModel
-from scipy.optimize import minimize
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy import units as u
-from astropy import constants as const
 
 st.markdown('# Level Two: Transit Curve Adventure')
 st.sidebar.header("Level Two")
