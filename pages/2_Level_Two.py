@@ -311,6 +311,7 @@ if section2==3:
             st.write("Try again! Have another look at the plot above.")
     hint = st.checkbox("Need to use a hint power-up?", value=False)
     if hint:
+        st.markdown('---')
         st.markdown("You've seen used the hint power-up! Your hint is: remember that shorter periods result in shorter transit durations. Use it wisely!")
         st.markdown('---')
  
