@@ -414,3 +414,28 @@ if section2==4:
     plt.minorticks_on()
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
     st.pyplot(fig_tlong_lc18b)
+
+    st.write("Ready to test your skills? Complete the questions below!")
+
+    question2_4_1 = "Estimate the period of the exoplanet's orbit based on the transit light curve above."
+    st.write(question2_4_1)
+    options2_4_1=["1 day", "72 hours", "172800 seconds", "4 days"]
+    st.write(options2_4_1)
+     # Display Question 2.4.1 and options
+    selected_option2_4_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_1')
+    # Check the selected option
+    if selected_option2_4_1 == "2":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_1 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_1 == "1":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_1 == "3":
+            st.write("Try again! Have another look at the plot above.")
+    hint2_4_1 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_1')
+    if hint2_4_1:
+        st.markdown('---')
+        st.markdown("You've seen used the hint power-up! Your hint is: remember that the period can be determined by measuring the time between consecutive transit events! Use it wisely!")
+        st.markdown('---')
