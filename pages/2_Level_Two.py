@@ -338,6 +338,28 @@ if section2==3:
         st.markdown("You've seen used the hint power-up! Your hint is: remember that frequency (f) in inversely proportional to period (T)! Use it wisely!")
         st.markdown('---')
 
+    question2_3_4 = "If an exoplanet's transit lasts for 2 hours and it occurs every 32.9 days, what is the orbital period of the exoplanet?"
+    st.write(question2_3_4)
+    options2_3_4=["32.9 days", "35.9 days", "30.9 days", "37.9 days"]
+    st.write(options2_3_4)
+     # Display Question 2.3.4 and options
+    selected_option2_3_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_4')
+    # Check the selected option
+    if selected_option2_3_4 == "0":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_3_4 == "1":
+            st.write("Try again! Have another look at the question above.")
+        elif selected_option2_3_4 == "2":
+            st.write("Try again! Have another look at the question above.")
+        elif selected_option2_3_4 == "3":
+            st.write("Try again! Have another look at the question above.")
+    hint2_3_4 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_3_4')
+    if hint2_3_4:
+        st.markdown('---')
+        st.markdown("You've seen used the hint power-up! Your hint is: remember what orbital period means! Use it wisely!")
+        st.markdown('---')
 
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
