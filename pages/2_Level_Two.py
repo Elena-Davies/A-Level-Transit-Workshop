@@ -274,7 +274,24 @@ if section2==3:
 
     st.write("Complete the questions below to succeed in your mission!")
 
-    
+    question2_3_1 = "From the plot above, which planet has the longest period?"
+    st.write(question2_3_1)
+    options2_3_1=["TRAPPIST-1 h", "TOI-1260 d", "K2-18 b", "K2-83 c"]
+    st.write(options2_3_1)
+     # Display Question 2.3.1 and options
+    selected_option2_3_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_1')
+    # Check the selected option
+    if selected_option2_3_1 == "1":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_3_1 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_3_1 == "3":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_3_1 == "2":
+            st.write("Try again! Have another look at the plot above.")
+
 
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
