@@ -25,7 +25,7 @@ question3_1_1 = "Which plot has the atmosphere?"
 options3_1_1=["Plot 1", "Plot 2", "Both plots", "Neither plots", "None of the above"]
 st.write(question3_1_1)
 st.write(options3_1_1)
-selected_option3_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q3_1_1')
+selected_option3_1_1 = st.text_input("Type the number (0-4) corresponding to your solution:", key='q3_1_1')
 # Check the selected option
 if selected_option3_1_1 == "4":
     st.write("Correct!  :)")
