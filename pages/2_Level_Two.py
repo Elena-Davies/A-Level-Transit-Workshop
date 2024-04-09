@@ -338,6 +338,7 @@ if section2==3:
         st.markdown("You've seen used the hint power-up! Your hint is: remember that frequency (f) in inversely proportional to period (T)! Use it wisely!")
         st.markdown('---')
 
+
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
     tlong=np.linspace(0,5,10000)
