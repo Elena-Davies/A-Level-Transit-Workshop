@@ -485,3 +485,26 @@ if section2==4:
         st.markdown('---')
         st.markdown("You've used the hint power-up! Your hint is: Count the number of distinct dips in brightness in the transit light curve. Use it wisely!")
         st.markdown('---')
+
+    question2_4_4 = "What is the average transit duration of the exoplanet based on the observed transit event(s)?"
+    st.write(question2_4_4)
+    options2_4_4=["Approximately 1.0 day", "Approximately 0.8 days", "Approximately 0.4 days", "Approximately 0.2 days"]
+    st.write(options2_4_4)
+     # Display Question 2.4.4 and options
+    selected_option2_4_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_4')
+    # Check the selected option
+    if selected_option2_4_4 == "1":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_4 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_4 == "2":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_4 == "3":
+            st.write("Try again! Have another look at the plot above.")
+    hint2_4_4 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_4')
+    if hint2_4_3:
+        st.markdown('---')
+        st.markdown("You've used the hint power-up! Your hint is: alculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
+        st.markdown('---')
