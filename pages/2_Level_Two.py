@@ -326,11 +326,11 @@ if section2==3:
         st.write("Correct! :)")
     else:
         # Provide a hint
-        if selected_option2_3_1 == "0":
+        if selected_option2_3_2 == "0":
             st.write("Try again! Have another look at the plot above.")
-        elif selected_option2_3_1 == "1":
+        elif selected_option2_3_2 == "1":
             st.write("Try again! Have another look at the plot above.")
-        elif selected_option2_3_1 == "2":
+        elif selected_option2_3_2 == "2":
             st.write("Try again! Have another look at the plot above.")
     hint = st.checkbox("Need to use a hint power-up?", value=False)
     if hint:
