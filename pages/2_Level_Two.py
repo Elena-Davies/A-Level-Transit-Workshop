@@ -526,8 +526,28 @@ if section2==4:
             st.write("Try again! Have another look at the plot above.")
         elif selected_option2_4_5 == "3":
             st.write("Try again! Have another look at the plot above.")
-    hint2_4_4 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_4')
-    if hint2_4_3:
+    hint2_4_5 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_5')
+    if hint2_4_5:
         st.markdown('---')
         st.markdown("You've used the hint power-up! Your hint is: alculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
         st.markdown('---')
+
+    question2_4_6 = "What can scientists learn about an exoplanet from its transit?"
+    st.write(question2_4_6)
+    options2_4_6=["Its surface temperature", "Its atmospheric composition", "Its size and orbit", "All of the above"]
+    st.write(options2_4_6)
+     # Display Question 2.4.6 and options
+    selected_option2_4_6 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_6')
+    # Check the selected option
+    if selected_option2_4_6 == "3":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_6 == "0":
+            st.write("Try again! Have another look at the mission details above.")
+        elif selected_option2_4_6 == "1":
+            st.write("Try again! Have another look at the mission detials above.")
+        elif selected_option2_4_6 == "2":
+            st.write("Try again! Have another look at the mission details above.")
+
+        
