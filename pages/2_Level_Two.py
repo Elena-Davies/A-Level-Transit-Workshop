@@ -508,3 +508,26 @@ if section2==4:
         st.markdown('---')
         st.markdown("You've used the hint power-up! Your hint is: alculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
         st.markdown('---')
+
+    question2_4_5 = "What is the transit depth ratio between two consecutive transit events?"
+    st.write(question2_4_5)
+    options2_4_5=["2.5x10^-3", "0.9975", "1", "0"]
+    st.write(options2_4_5)
+     # Display Question 2.4.5 and options
+    selected_option2_4_5 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_5')
+    # Check the selected option
+    if selected_option2_4_5 == "0":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_5 == "1":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_5 == "2":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_5 == "3":
+            st.write("Try again! Have another look at the plot above.")
+    hint2_4_4 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_4')
+    if hint2_4_3:
+        st.markdown('---')
+        st.markdown("You've used the hint power-up! Your hint is: alculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
+        st.markdown('---')
