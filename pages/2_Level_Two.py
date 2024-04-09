@@ -550,4 +550,20 @@ if section2==4:
         elif selected_option2_4_6 == "2":
             st.write("Try again! Have another look at the mission details above.")
 
-        
+    question2_4_7 = "How do astronomers determine the characteristics of an exoplanet using the transit method?"
+    st.write(question2_4_7)
+    options2_4_7=["By measuring the exoplanet's surface temperature", "By analysing changes in the star's magnetic field", "By observing variations in the star's size", "By studying the duration and depth of the transit event"]
+    st.write(options2_4_7)
+     # Display Question 2.4.7 and options
+    selected_option2_4_7 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_7')
+    # Check the selected option
+    if selected_option2_4_7 == "3":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_7 == "0":
+            st.write("Try again! Have another look at the mission details above.")
+        elif selected_option2_4_7 == "1":
+            st.write("Try again! Have another look at the mission detials above.")
+        elif selected_option2_4_7 == "2":
+            st.write("Try again! Have another look at the mission details above.")
