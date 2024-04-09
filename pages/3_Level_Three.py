@@ -14,67 +14,92 @@ from matplotlib.animation import FuncAnimation
 st.markdown('# Level Three: Atmospheres and Spectra')
 st.sidebar.header("Level Three")
 st.write('Level Three: Stomry, rocky terrain and with 90% chance of rain!')
-st.markdown("So far, we've only considered planets that have atmopsheres, however, not all planets do!")
-st.markdown("Astronomers are very interested in planets with atmospheres because you're more likely to find life on those planets. ")
-st.markdown("*But how do they know the planet has an atmosphere?*")
-st.markdown(" Look at the two plots of transit light curves below, which one do you think has an atmosphere and which one doesn't?")
 
-st.image('Images/atmosphere.png')
+# Define section titles
+sectiontitles3 = ['Mission One', 'Mission Two']
 
-question3_1_1 = "Which plot has the atmosphere?"
-options3_1_1=["Plot 1", "Plot 2", "Both plots", "Neither plots", "None of the above"]
-st.write(question3_1_1)
-st.write(options3_1_1)
-selected_option3_1_1 = st.text_input("Type the number (0-4) corresponding to your solution:", key='q3_1_1')
-# Check the selected option
-if selected_option3_1_1 == "4":
-    st.write("Correct!  :)")
-else:
-    # Provide a hint
-    if selected_option3_1_1 == "0":
-        st.write("Try again!")
-    elif selected_option3_1_1 == "1":
-        st.write("Try again!")
-    elif selected_option3_1_1 == "2":
-        st.write("Try again!")
-    elif selected_option3_1_1 == "3":
-        st.write("Try again!")
+# Define section titles
+def sectiontitle(number):
+    return "{0}: {1}".format(number, sectiontitles3[number-1])
 
-st.markdown("In reality, astronomers don't use transits like above to determine if a planet has an atmosphere. Instead, they use the spectra of the star's light! They observe spectral emission and aborption lines to see what molecules the planet is absorbing!")
+# Define section
+section3 = st.radio('Select mission:', [1,2], format_func=sectiontitle)
 
-st.markdown("Take a look at an example of a transmission spectrum of an exoplanet called K2-18 b!")
-st.image('Images/trans_spec_K218b.jpg')
+# Write section headers
+st.markdown("## {}".format(sectiontitle(section3)))
 
-st.markdown("Now let's look at a more detailed plot. Play around with it!")
+if section3==1:
 
-# Load initial data
-molecule_data = {
-    'CH4': 'CSV Data/CH4 Dataset 2.csv',
-    'H2O': 'CSV Data/H20 Dataset 2.csv',
-    'CO2': 'CSV Data/CO2 Dataset 2.csv',
-    'NH3': 'CSV Data/NH3 Dataset 2.csv',
-    'HCN': 'CSV Data/HCN Dataset 2.csv',
-    'CO': 'CSV Data/CO Dataset 2.csv',
-    'DMS': 'CSV Data/DMS Dataset 2.csv',
-    'CH3Cl': 'CSV Data/CH3Cl Dataset 2.csv'
-}
+    st.markdown("So far, we've only considered planets that have atmopsheres, however, not all planets do!")
+    st.markdown("Astronomers are very interested in planets with atmospheres because you're more likely to find life on those planets. ")
+    st.markdown("*But how do they know the planet has an atmosphere?*")
+    st.markdown(" Look at the two plots of transit light curves below, which one do you think has an atmosphere and which one doesn't?")
 
-# Create sliders for molecule selection
-selected_molecule = st.selectbox('Select a molecule:', list(molecule_data.keys()))
+    st.image('Images/atmosphere.png')
 
-# Load data based on selected molecule
-data_file = molecule_data[selected_molecule]
-x, y = np.loadtxt(data_file, delimiter=',', unpack=True)
+    question3_1_1 = "Which plot has the atmosphere?"
+    options3_1_1=["Plot 1", "Plot 2", "Both plots", "Neither plots", "None of the above"]
+    st.write(question3_1_1)
+    st.write(options3_1_1)
+    selected_option3_1_1 = st.text_input("Type the number (0-4) corresponding to your solution:", key='q3_1_1')
+    # Check the selected option
+    if selected_option3_1_1 == "4":
+        st.write("Correct!  Proceed to the next mission:)")
+    else:
+        # Provide a hint
+        if selected_option3_1_1 == "0":
+            st.write("Try again!")
+        elif selected_option3_1_1 == "1":
+            st.write("Try again!")
+        elif selected_option3_1_1 == "2":
+            st.write("Try again!")
+        elif selected_option3_1_1 == "3":
+            st.write("Try again!")
 
-# Plot the data
-#with _lock:
-fig_transspec = plt.figure('transspec')
-transspec = plt.plot(x, y, label=selected_molecule)
-plt.xlabel('Wavelength (micrometers)')
-plt.ylabel('Transit Depth (%)')
-plt.legend()
-# Show plot
-st.pyplot(fig_transspec)
+if section3==2:
 
-st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
-st.image('Images/subplot_transspec.png')
+    st.markdown("That's right! In reality, astronomers don't use transits to determine if a planet has an atmosphere. Instead, they use the spectra of the star's light! They observe spectral emission and aborption lines to see what molecules the planet is absorbing!")
+
+    st.markdown("Take a look at an example of a transmission spectrum of an exoplanet called K2-18 b!")
+    st.image('Images/trans_spec_K218b.jpg')
+
+    st.markdown("So how do astronomers use this to determine whether it was has atmosphere or not? The answer lies in your knowledge of emission and absorption spectra!")
+    st.markdown("Remember that stars, like our Sun, are blackbodies. This means that they emit and absorb all wavelengths. Therefore, if you were to look at a star's light through a prism, you would see all the colours in the rainbow!")
+    st.markdown("However, when a planet creeps in front of the star, the star's light shines only through the planet's atmosphere - if it has one! This means that the molecules and compounds in the planet's atmosphere will absorb the light at its usual wavelength. Therefore, when astronomers observe the absorption spectrum at this point, they will see lines missing in it, according to the molecules that have absorped the light. As a result, the spectrum won't look like a full rainbow anymore!")
+    st.markdown("Scientists already know what wavelengths molecules and compounds emit and absorp so all that's left to do is compare the spectrum observed from the star with the spectra of molecules and compounds we've measured in labs on Earth!")
+
+    st.markdown("Now, it's your turn to look at the absorption spectra of compounds and molecules. Play around with it!")
+
+    # Load initial data
+    molecule_data = {
+        'CH4': 'CSV Data/CH4 Dataset 2.csv',
+        'H2O': 'CSV Data/H20 Dataset 2.csv',
+        'CO2': 'CSV Data/CO2 Dataset 2.csv',
+        'NH3': 'CSV Data/NH3 Dataset 2.csv',
+        'HCN': 'CSV Data/HCN Dataset 2.csv',
+        'CO': 'CSV Data/CO Dataset 2.csv',
+        'DMS': 'CSV Data/DMS Dataset 2.csv',
+        'CH3Cl': 'CSV Data/CH3Cl Dataset 2.csv'
+    }
+
+    # Create sliders for molecule selection
+    selected_molecule = st.selectbox('Select a molecule:', list(molecule_data.keys()))
+
+    # Load data based on selected molecule
+    data_file = molecule_data[selected_molecule]
+    x, y = np.loadtxt(data_file, delimiter=',', unpack=True)
+
+    # Plot the data
+    #with _lock:
+    fig_transspec = plt.figure('transspec')
+    transspec = plt.plot(x, y, label=selected_molecule)
+    plt.xlabel('Wavelength (micrometers)')
+    plt.ylabel('Transit Depth (%)')
+    plt.legend()
+    # Show plot
+    st.pyplot(fig_transspec)
+
+    st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
+    st.image('Images/subplot_transspec.png')
+
+    
