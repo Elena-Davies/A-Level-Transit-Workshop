@@ -102,7 +102,7 @@ if section3==2:
     st.markdown("Here are the molecules and compounds in subplots, which ones do you recognise?")
     st.image('Images/subplot_transspec.png')
 
-    st.markdown("The elements above are evidence for potential human life. In astronomy, they are called biomarkers. A biomarker in exoplanets is a clue or sign that 'marks' potential biological life forms on exoplanets! We determine what counts as biomarkers by comparing the elements, chemicals and gases in the exoplanet's atmosphere with the Earth's atmosphere, as we know life is there!")
+    st.markdown("Some of the elements above are evidence for potential human life. In astronomy, they are called biomarkers. A biomarker in exoplanets is a clue or sign that 'marks' potential biological life forms on exoplanets! We determine what counts as biomarkers by comparing the elements, chemicals and gases in the exoplanet's atmosphere with the Earth's atmosphere, as we know life is there!")
     st.markdown("From the picture above, we can see that scientists have potentially detected methane, carbon dioxide and dimethyl sulfide. These are all things that are produced by living things here on Earth!")
     st.markdown("Methane can be produced by agriculture, fossil fuels and decomposition of landfill waste.")
     st.markdown("Carbon dioxide can be produced by volcanoes, the breath of animals and plant decay. (In astronomy, we consider plants to be life as well as animals and humans!)")
