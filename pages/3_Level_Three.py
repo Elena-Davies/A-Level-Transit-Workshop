@@ -22,20 +22,22 @@ st.markdown(" Look at the two plots of transit light curves below, which one do 
 st.image('Images/atmosphere.png')
 
 question3_1_1 = "Which plot has the atmosphere?"
-options3_1_1=["Plot 1", "Plot 2", "Both plots", "Neither plots"]
+options3_1_1=["Plot 1", "Plot 2", "Both plots", "Neither plots", "None of the above"]
 st.write(question3_1_1)
 st.write(options3_1_1)
 selected_option3_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q3_1_1')
 # Check the selected option
-if selected_option3_1_1 == "3":
+if selected_option3_1_1 == "4":
     st.write("Correct!  :)")
 else:
     # Provide a hint
     if selected_option3_1_1 == "0":
         st.write("Try again!")
+    elif selected_option3_1_1 == "1":
+        st.write("Try again!")
     elif selected_option3_1_1 == "2":
         st.write("Try again!")
-    elif selected_option3_1_1 == "1":
+    elif selected_option3_1_1 == "3":
         st.write("Try again!")
 
 st.markdown("In reality, astronomers don't use transits like above to determine if a planet has an atmosphere. Instead, they use the spectra of the star's light! They observe spectral emission and aborption lines to see what molecules the planet is absorbing!")
