@@ -309,7 +309,7 @@ if section2==3:
             st.write("Try again! Have another look at the plot above.")
         elif selected_option2_3_2 == "2":
             st.write("Try again! Have another look at the plot above.")
-    hint2_3_2 = st.checkbox("Need to use a hint power-up?", value=False)
+    hint2_3_2 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_3_2')
     if hint2_3_2:
         st.markdown('---')
         st.markdown("You've seen used the hint power-up! Your hint is: remember that shorter periods result in shorter transit durations. Use it wisely!")
@@ -332,7 +332,7 @@ if section2==3:
             st.write("Try again! Have another look at the plot above.")
         elif selected_option2_3_3 == "2":
             st.write("Try again! Have another look at the plot above.")
-    hint2_3_3 = st.checkbox("Need to use a hint power-up?", value=False)
+    hint2_3_3 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_3_3')
     if hint2_3_3:
         st.markdown('---')
         st.markdown("You've seen used the hint power-up! Your hint is: remember that frequency (f) in inversely proportional to period (T)! Use it wisely!")
