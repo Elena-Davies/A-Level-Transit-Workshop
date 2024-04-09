@@ -199,6 +199,7 @@ if section2==2:
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
     st.pyplot(fig_lck)
     st.write('From your plot, think about how you can calculate the time range of when the planet passes in front of the star.')
+    st.write("You should be able to notice that the bigger the ratio of planet radius and star radius makes a lower dip in the star's brightness! How would you go about calculating the transit depth of the exoplanet? (Remember that transit depth is the name for how big the dip is!)")
 
     st.write('Look at the above slider plot in a different way below!')
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
@@ -237,6 +238,28 @@ if section2==2:
         elif selected_option2_2_1 == "2":
             st.write("Try again! Have another look at the plot above.")
 
+    question2_2_2 = "If an exoplanet has a radius of 2.6 times that of Earth and its transit depth is 0.29%, what is the radius of its parent star? The Sun's radius is about 109 times the radius of the Earth."
+    st.write(question2_2_2)
+    options2_2_2=["0.044 times the size of the Sun", "48 times the size of the Sun", "0.48 times the size of the Sun", "0.44 times the size of the Sun"]
+    st.write(options2_2_1)
+     # Display Question 2.2.1 and options
+    selected_option2_2_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_2_1')
+    # Check the selected option
+    if selected_option2_2_1 == "3":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_2_1 == "0":
+            st.write("Try again! Remember that the transit depth is a percentage!")
+        elif selected_option2_2_1 == "1":
+            st.write("Try again! Use all the information in the question!")
+        elif selected_option2_2_1 == "2":
+            st.write("Try again! Remember to check over your calculations!")
+    hint2_2_2 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_2_2')
+    if hint2_2_2:
+        st.markdown('---')
+        st.markdown("You've seen used the hint power-up! Your hint is: transit depth is calculated by the radius of the exoplanet divided by the radius of the star squared! Use your power-up wisely!")
+        st.markdown('---')
 
 
 if section2==3:
