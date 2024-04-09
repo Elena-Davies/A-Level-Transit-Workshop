@@ -439,3 +439,26 @@ if section2==4:
         st.markdown('---')
         st.markdown("You've seen used the hint power-up! Your hint is: remember that the period can be determined by measuring the time between consecutive transit events! Use it wisely!")
         st.markdown('---')
+
+    question2_4_2 = "What is the depth of the transit?"
+    st.write(question2_4_2)
+    options2_4_2=["0.9973", "0.0025", "1.000", "0.9975"]
+    st.write(options2_4_2)
+     # Display Question 2.4.2 and options
+    selected_option2_4_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_2')
+    # Check the selected option
+    if selected_option2_4_2 == "1":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_2 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_2 == "2":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_2 == "3":
+            st.write("Try again! Have another look at the plot above.")
+    hint2_4_2 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_2')
+    if hint2_4_2:
+        st.markdown('---')
+        st.markdown("You've used the hint power-up! Your hint is: the depth represents the decrease in brightness of the host star during a transit event and the y-axis is already measured in the 'Relative Flux'. Use it wisely!")
+        st.markdown('---')
