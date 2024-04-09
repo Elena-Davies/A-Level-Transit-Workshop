@@ -567,6 +567,11 @@ if section2==4:
             st.write("Try again! Have another look at the mission detials above.")
         elif selected_option2_4_7 == "2":
             st.write("Try again! Have another look at the mission details above.")
+    hint2_4_7 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_7')
+    if hint2_4_7:
+        st.markdown('---')
+        st.markdown("You've used the hint power-up! Your hint is: By characteristics, astronomers usually mean properties of the exoplanet like its radius, mass, density, temperature, etc. Use it wisely!")
+        st.markdown('---')
 
     question2_4_8 = "What can the time between each dip tell you?"
     st.write(question2_4_8)
