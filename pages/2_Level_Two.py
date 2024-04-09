@@ -315,7 +315,7 @@ if section2==3:
         st.markdown("You've seen used the hint power-up! Your hint is: remember that shorter periods result in shorter transit durations. Use it wisely!")
         st.markdown('---')
  
-    question2_3_3g = "From the plot above, which planet has the shortest transit duration?"
+    question2_3_3 = "From the plot above, which planet has the shortest transit duration?"
     st.write(question2_3_2)
     options2_3_2=["TRAPPIST-1 h", "K2-83 c", "K2-18 b", "TOI-1260 d"]
     st.write(options2_3_2)
