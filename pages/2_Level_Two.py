@@ -18,14 +18,14 @@ st.sidebar.header("Level Two")
 st.write('Level Two: Cloudy (with no chance of meatballs), rocky terrain and with 50% chance of rain!')
 
 # Define section titles
-sectiontitles2 = ['Mission One', 'Mission Two', 'Mission Three','Mission Four','Level Two Questions']
+sectiontitles2 = ['Mission One', 'Mission Two', 'Mission Three','Mission Four']
 
 # Define section titles
 def sectiontitle(number):
     return "{0}: {1}".format(number, sectiontitles2[number-1])
 
 # Define section
-section2 = st.radio('Select mission:', [1,2,3,4,5], format_func=sectiontitle)
+section2 = st.radio('Select mission:', [1,2,3,4], format_func=sectiontitle)
 
 # Write section headers
 st.markdown("## {}".format(sectiontitle(section2)))
