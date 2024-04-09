@@ -95,18 +95,18 @@ if section2==1:
     options2_1_2=["Between -0.100 and -0.075 days", "Between -0.075 and 0.075 days", "Between 0.075 and 0.100 days", "None of the above"]
     st.write(question2_1_2)
     st.write(options2_1_2)
-     # Display Question 2.2.1 and options
-    selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_2')
+     # Display Question 2.1.2 and options
+    selected_option2_1_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_2')
     # Check the selected option
-    if selected_option2_2_2 == "1":
+    if selected_option2_1_2 == "1":
         st.write("Correct! :)")
     else:
         # Provide a hint
-        if selected_option2_2_2 == "0":
+        if selected_option2_1_2 == "0":
             st.write("Try again!")
-        elif selected_option2_2_2 == "2":
+        elif selected_option2_1_2 == "2":
             st.write("Try again!")
-        elif selected_option2_2_2 == "3":
+        elif selected_option2_1_2 == "3":
             st.write("Try again!")
 
     question2_1_6 = "If the transit of an exoplanet in front of its star causes a change in the star's brightness by 0.05 magnitudes and the star's initial brightness is 13.5 magnitudes, what is its brightness during the transit?"
@@ -241,19 +241,19 @@ if section2==2:
     question2_2_2 = "If an exoplanet has a radius of 2.6 times that of Earth and its transit depth is 0.29%, what is the radius of its parent star? The Sun's radius is about 109 times the radius of the Earth."
     st.write(question2_2_2)
     options2_2_2=["0.044 times the size of the Sun", "48 times the size of the Sun", "0.48 times the size of the Sun", "0.44 times the size of the Sun"]
-    st.write(options2_2_1)
-     # Display Question 2.2.1 and options
-    selected_option2_2_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_2_1')
+    st.write(options2_2_2)
+     # Display Question 2.2.2 and options
+    selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_2_2')
     # Check the selected option
-    if selected_option2_2_1 == "3":
+    if selected_option2_2_2 == "3":
         st.write("Correct! :)")
     else:
         # Provide a hint
-        if selected_option2_2_1 == "0":
+        if selected_option2_2_2 == "0":
             st.write("Try again! Remember that the transit depth is a percentage!")
-        elif selected_option2_2_1 == "1":
+        elif selected_option2_2_2 == "1":
             st.write("Try again! Use all the information in the question!")
-        elif selected_option2_2_1 == "2":
+        elif selected_option2_2_2 == "2":
             st.write("Try again! Remember to check over your calculations!")
     hint2_2_2 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_2_2')
     if hint2_2_2:
