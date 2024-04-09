@@ -437,7 +437,7 @@ if section2==4:
     hint2_4_1 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_1')
     if hint2_4_1:
         st.markdown('---')
-        st.markdown("You've seen used the hint power-up! Your hint is: remember that the period can be determined by measuring the time between consecutive transit events! Use it wisely!")
+        st.markdown("You've used the hint power-up! Your hint is: remember that the period can be determined by measuring the time between consecutive transit events! Use it wisely!")
         st.markdown('---')
 
     question2_4_2 = "What is the depth of the transit?"
@@ -461,4 +461,27 @@ if section2==4:
     if hint2_4_2:
         st.markdown('---')
         st.markdown("You've used the hint power-up! Your hint is: the depth represents the decrease in brightness of the host star during a transit event and the y-axis is already measured in the 'Relative Flux'. Use it wisely!")
+        st.markdown('---')
+
+    question2_4_3 = "How many transit events are observed within the given timeframe?"
+    st.write(question2_4_3)
+    options2_4_3=["1/2", "1", "2", "5/2"]
+    st.write(options2_4_3)
+     # Display Question 2.4.3 and options
+    selected_option2_4_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_3')
+    # Check the selected option
+    if selected_option2_4_3 == "3":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_3 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_3 == "1":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_4_3 == "2":
+            st.write("Try again! Have another look at the plot above.")
+    hint2_4_3 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_3')
+    if hint2_4_3:
+        st.markdown('---')
+        st.markdown("You've used the hint power-up! Your hint is: Count the number of distinct dips in brightness in the transit light curve. Use it wisely!")
         st.markdown('---')
