@@ -292,6 +292,28 @@ if section2==3:
         elif selected_option2_3_1 == "2":
             st.write("Try again! Have another look at the plot above.")
 
+    question2_3_2 = "From the plot above, which planet has the shortest transit duration?"
+    st.write(question2_3_2)
+    options2_3_2=["TRAPPIST-1 h", "K2-83 c", "K2-18 b", "TOI-1260 d"]
+    st.write(options2_3_2)
+     # Display Question 2.3.2 and options
+    selected_option2_3_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_2')
+    # Check the selected option
+    if selected_option2_3_2 == "3":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_3_1 == "0":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_3_1 == "1":
+            st.write("Try again! Have another look at the plot above.")
+        elif selected_option2_3_1 == "2":
+            st.write("Try again! Have another look at the plot above.")
+    hint = st.checkbox("Need to use a hint pwoer-up?", value=False)
+    if hint:
+        st.markdown("You've seen used the hint power-up! Your hint is: remember that shorter periods result in shorter transit durations. Use it wisely!")
+        st.markdown('---')
+ 
 
 if section2==4:
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
