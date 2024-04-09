@@ -586,3 +586,20 @@ if section2==4:
         elif selected_option2_4_8 == "3":
             st.write("Try again! Have another look at the mission details above.")
     
+    question2_4_9 = "How could you work out the size of the planet?"
+    st.write(question2_4_9)
+    options2_4_9=["By measuring the changes in the star's temperature during the transit", "By analysing the exoplanet's atmospheric composition", "By comparing the depth of the transit to the size of the star", "By observing the colour changes of the star during the transit"]
+    st.write(options2_4_9)
+     # Display Question 2.4.9 and options
+    selected_option2_4_9 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_9')
+    # Check the selected option
+    if selected_option2_4_9 == "2":
+        st.write("Correct! :)")
+    else:
+        # Provide a hint
+        if selected_option2_4_9 == "0":
+            st.write("Try again! Have another look at the mission details above.")
+        elif selected_option2_4_9 == "1":
+            st.write("Try again! Have another look at the mission detials above.")
+        elif selected_option2_4_9 == "3":
+            st.write("Try again! Have another look at the mission details above.")
