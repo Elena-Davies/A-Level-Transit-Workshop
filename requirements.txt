@@ -1,6 +1,7 @@
 #streamlit==1.22.0
 streamlit
-matplotlib==3.7.1
+#matplotlib==3.7.1
+matplotlib
 numpy==1.22
 pytransit
 scipy <1.13
