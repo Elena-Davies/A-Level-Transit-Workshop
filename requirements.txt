@@ -3,7 +3,6 @@ streamlit
 matplotlib==3.7.1
 numpy==1.22
 pytransit
-pytransit.models.roadrunner.opmodel
 scipy <1.13
 arviz==0.17
 emcee==3.1.4
