@@ -1,6 +1,6 @@
 streamlit==1.22.0
-# matplotlib==3.7.1
-# numpy==1.22
+ matplotlib==3.7.1
+ numpy==1.22
 pytransit
 scipy <1.13
 arviz==0.17
