@@ -1,1 +1,2 @@
 # A-Level-Transit-Workshop
+This project aims to create an engaging interactive workshop activity for secondary school students. It uses the Streamlit interface to delve into the detection and characterisation of exoplanets using simplified versions of the authentic data from current exoplanet research.
