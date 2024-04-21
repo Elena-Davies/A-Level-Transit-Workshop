@@ -3,6 +3,7 @@ import streamlit as st
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import pytransit
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
 
