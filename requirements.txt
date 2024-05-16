@@ -4,7 +4,8 @@ streamlit
 matplotlib
 #numpy==1.22
 numpy
-PyTransit==2.5.27
+#pytransit==2.5.27
+pytransit
 scipy <1.13
 arviz==0.17
 emcee==3.1.4
