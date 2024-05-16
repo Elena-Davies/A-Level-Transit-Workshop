@@ -57,7 +57,7 @@ tm.set_data(t)
 
 if section2==1:
     # Add text
-    st.write('Mission One objective: What do astronomers see?')
+    st.write('Mission One objective: Discover what astronomers see')
     st.write('When the planet moves in front of the star, the light of the star dims slightly for a short period of time. Think about when you put your hand in front of a torch and the light gets dimmer! Now, imagine this but the torch is the size of the Sun and your hand is the size of the Earth and both are thousands of kilometres away! This is very hard to see so astronomers have to use sensitive instruments that monitor the brightness of stars and analyse plots called transit light curves to see the dips in brightness. Have a look at the transit light curve of a real exoplanet called K2-18 b below!')
 
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
@@ -179,7 +179,7 @@ if section2==1:
             st.write("Try again!")
 
 if section2==2:
-    st.write('Mission Two objective: How does radius impact the transit curve?')
+    st.write('Mission Two objective: Find out how the radius impacts the transit curve')
     st.write('Play with the slider below to see how the radius can impact the transit curve in real time! What do you notice? Discuss with the person next to you!')
     tm = QuadraticModel() # a model that uses two limb-darkening coefficients
     t = np.linspace(-0.1, 0.1, 1200)
@@ -264,7 +264,7 @@ if section2==2:
 
 
 if section2==3:
-    st.write('Mission Three objective: From Planet to Star!')
+    st.write('Mission Three objective: Journey From the Planet to the Star!')
     st.write('Different transit events can tell you how far away the planet is from the star! This is all due to perspective. For example, if you cover a light source with a shield that is right in front of the light source it will block a lot of light but if you place the shield very far from the light source it will only block some of the light. See this in action with the interactive plot below!')
     per = st.slider("Value for period", 1.0, 50.0, 5.0)
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b, i=inc18b)
@@ -387,7 +387,7 @@ if section2==3:
         st.markdown('---')
 
 if section2==4:
-    st.write('Mission Four objective: What can you find out from a transit?')
+    st.write('Mission Four objective: Discover what you can find out from a transit')
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
     tlong=np.linspace(0,5,10000)
     tm.set_data(tlong)
