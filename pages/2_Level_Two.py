@@ -3,13 +3,11 @@ import streamlit as st
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import PyTransit
+import pytransit
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
 
-#import PyTransit and some key modules
-from PyTransit import QuadraticModel
-# from pytransit import UniformModel
+from pytransit import QuadraticModel
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy import units as u
