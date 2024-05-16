@@ -22,6 +22,7 @@ section1 = st.radio('Select mission:', [1,2], format_func=sectiontitle)
 st.markdown("## {}".format(sectiontitle(section1)))
 
 if section1==1:
+    st.write('Mission One objective: Find out what the transit method is')
     # Add an image from local file
     caption = 'An illustration of an exoplanet Kb-18 b! The red sphere is the cool dwarf star that it orbits around called K2-18. Illustration: NASA, CSA, ESA, J. Olmsted (STScI), Science: N. Madhusudhan (Cambridge University)'
     st.image('Images/k218b.jpg', caption='An illustration of an exoplanet Kb-18 b! The red sphere is the cool dwarf star that it orbits around called K2-18. Illustration: NASA, CSA, ESA, J. Olmsted (STScI), Science: N. Madhusudhan (Cambridge University)', output_format="jpeg")
