@@ -29,6 +29,7 @@ section3 = st.radio('Select mission:', [1,2], format_func=sectiontitle)
 st.markdown("## {}".format(sectiontitle(section3)))
 
 if section3==1:
+    st.write('Mission One objective: extend your knowledge to atmopheres and spectra!')
 
     st.markdown("So far, we've only considered planets that have atmopsheres, however, not all planets do!")
     st.markdown("Astronomers are very interested in planets with atmospheres because you're more likely to find life on those planets. ")
@@ -44,7 +45,7 @@ if section3==1:
     selected_option3_1_1 = st.text_input("Type the number (0-4) corresponding to your solution:", key='q3_1_1')
     # Check the selected option
     if selected_option3_1_1 == "4":
-        st.write("Correct!  Proceed to the next mission:)")
+        st.write("Correct! It's actually very difficult to say which planet has an atmosphere or not just by looking at its transit! Proceed to the next mission:)")
     else:
         # Provide a hint
         if selected_option3_1_1 == "0":
@@ -57,6 +58,7 @@ if section3==1:
             st.write("Try again!")
 
 if section3==2:
+    st.write('Mission Two objective: Learn about spectra!')
 
     st.markdown("That's right! In reality, astronomers don't use transits to determine if a planet has an atmosphere. Instead, they use the spectra of the star's light! They observe spectral emission and aborption lines to see what molecules the planet is absorbing!")
 
