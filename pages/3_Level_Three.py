@@ -2,9 +2,6 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-# use the non-interactive Agg backend to be more thread safe
-#mpl.use("agg")
-#_lock = RendererAgg.lock
 
 st.markdown('# Level Three: Atmospheres and Spectra')
 st.sidebar.header("Level Three")
