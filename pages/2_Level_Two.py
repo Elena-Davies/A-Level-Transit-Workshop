@@ -57,6 +57,7 @@ tm.set_data(t)
 
 if section2==1:
     # Add text
+    st.write('Mission One objective: What do astronomers see?')
     st.write('When the planet moves in front of the star, the light of the star dims slightly for a short period of time. Think about when you put your hand in front of a torch and the light gets dimmer! Now, imagine this but the torch is the size of the Sun and your hand is the size of the Earth and both are thousands of kilometres away! This is very hard to see so astronomers have to use sensitive instruments that monitor the brightness of stars and analyse plots called transit light curves to see the dips in brightness. Have a look at the transit light curve of a real exoplanet called K2-18 b below!')
 
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b)
@@ -80,15 +81,15 @@ if section2==1:
     selected_option2_1_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_1')
     # Check the selected option
     if selected_option2_1_1 == "2":
-        st.write("Correct! :)")
+        st.write("Correct! Scientists look for repeated dips in the star's brightness at regular intervals to confirm the presence of an exoplanet using the transit method :)")
     else:
         # Provide a hint
         if selected_option2_1_1 == "0":
-            st.write("Try again!")
+            st.write("Try again! Re-read the Mission One details")
         elif selected_option2_1_1 == "1":
-            st.write("Try again!")
+            st.write("Try again! Re-read the Mission One details")
         elif selected_option2_1_1 == "3":
-            st.write("Try again!")
+            st.write("Try again! Re-read the Mission One details")
 
     question2_1_2 = "When does the planet pass in front of the star?"
     options2_1_2=["Between -0.100 and -0.075 days", "Between -0.075 and 0.075 days", "Between 0.075 and 0.100 days", "None of the above"]
@@ -98,15 +99,15 @@ if section2==1:
     selected_option2_1_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_2')
     # Check the selected option
     if selected_option2_1_2 == "1":
-        st.write("Correct! :)")
+        st.write("Correct! The planet passes in front of the star between -0.075 and 0.075 days :)")
     else:
         # Provide a hint
         if selected_option2_1_2 == "0":
-            st.write("Try again!")
+            st.write("Try again! Have another look at the plot!")
         elif selected_option2_1_2 == "2":
-            st.write("Try again!")
+            st.write("Try again! Have another look at the plot!")
         elif selected_option2_1_2 == "3":
-            st.write("Try again!")
+            st.write("Try again! Have another look at the plot!")
 
     question2_1_6 = "If the transit of an exoplanet in front of its star causes a change in the star's brightness by 0.05 magnitudes and the star's initial brightness is 13.5 magnitudes, what is its brightness during the transit?"
     options2_1_6 = ["10.05 magnitudes", "13.45 magnitudes", "9.95 magnitudes", "13.55 magntiudes"]
@@ -116,7 +117,7 @@ if section2==1:
     selected_option2_1_6 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_6')
     # Check the selected option
     if selected_option2_1_6 == "1":
-        st.write("Correct! :)")
+        st.write("Correct! The brightness during the transit is 13.45 magnitudes :)")
     else:
         # Provide a hint if possible
         if selected_option2_1_6 == "0":
@@ -132,16 +133,16 @@ if section2==1:
     st.write(options2_1_3)    
     selected_option2_1_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_1_3')
     # Check the selected option
-    if selected_option2_1_3 == "1":
-        st.write("Correct!  :)")
+    if selected_option2_1_3 == "2":
+        st.write("Correct! A star's light dims slightly during a transit caused by an exoplanet :)")
     else:
         # Provide a hint
         if selected_option2_1_3 == "0":
-            st.write("Try again!")
+            st.write("Try again! Have another go!")
         elif selected_option2_1_3 == "2":
-            st.write("Try again!")
+            st.write("Try again! Have another go!")
         elif selected_option2_1_3 == "3":
-            st.write("Try again!")
+            st.write("Try again! Have another go!")
 
     question2_1_4 ="Why does the brightness of a star decrease during a transit?"
     options2_1_4=["Due to the presence of sunspots on the star's surface", "Because the exoplanet blocks a portion of the star's light as it passes in front of it", "As a result of an error in the data", "Because of fluctuations in the star's internal temperature"]
@@ -150,7 +151,7 @@ if section2==1:
     selected_option2_1_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_1')
     # Check the selected option
     if selected_option2_1_4 == "1":
-        st.write("Correct!  :)")
+        st.write("Correct! The brightness of a star decreases during a transit because the exoplanet blocks a portion of the star's light as the exoplanet passes in front of the star :)")
     else:
         # Provide a hint
         if selected_option2_1_4 == "0":
@@ -167,7 +168,7 @@ if section2==1:
     selected_option2_1_5 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_5_1')
     # Check the selected option
     if selected_option2_1_5 == "1":
-        st.write("Correct!  :)")
+        st.write("Correct! The slopes represent the change in brightness over time :) You may advance to the next mission!")
     else:
         # Provide a hint
         if selected_option2_1_5 == "0":
@@ -178,6 +179,7 @@ if section2==1:
             st.write("Try again!")
 
 if section2==2:
+    st.write('Mission Two objective: How does radius impact the transit curve?')
     st.write('Play with the slider below to see how the radius can impact the transit curve in real time! What do you notice? Discuss with the person next to you!')
     tm = QuadraticModel() # a model that uses two limb-darkening coefficients
     t = np.linspace(-0.1, 0.1, 1200)
@@ -227,15 +229,15 @@ if section2==2:
     selected_option2_2_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_2_1')
     # Check the selected option
     if selected_option2_2_1 == "3":
-        st.write("Correct! :)")
+        st.write("Correct! Kepler-116 b is the planet with the largest radius :)")
     else:
         # Provide a hint
         if selected_option2_2_1 == "0":
-            st.write("Try again! Have another look at the plot above.")
+            st.write("Try again! Have another look at the plot above!")
         elif selected_option2_2_1 == "1":
-            st.write("Try again! Have another look at the plot above.")
+            st.write("Try again! Have another look at the plot above!")
         elif selected_option2_2_1 == "2":
-            st.write("Try again! Have another look at the plot above.")
+            st.write("Try again! Have another look at the plot above!")
 
     question2_2_2 = "If an exoplanet has a radius of 2.6 times that of Earth and its transit depth is 0.29%, what is the radius of its parent star? The Sun's radius is about 109 times the radius of the Earth."
     st.write(question2_2_2)
@@ -245,7 +247,7 @@ if section2==2:
     selected_option2_2_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_2_2')
     # Check the selected option
     if selected_option2_2_2 == "3":
-        st.write("Correct! :)")
+        st.write("Correct! The radius of the parent star is 0.48 times the size of the Sun :) You've unlocked the next mission!")
     else:
         # Provide a hint
         if selected_option2_2_2 == "0":
@@ -262,10 +264,11 @@ if section2==2:
 
 
 if section2==3:
+    st.write('Mission Three objective: From Planet to Star!')
     st.write('Different transit events can tell you how far away the planet is from the star! This is all due to perspective. For example, if you cover a light source with a shield that is right in front of the light source it will block a lot of light but if you place the shield very far from the light source it will only block some of the light. See this in action with the interactive plot below!')
     per = st.slider("Value for period", 1.0, 50.0, 5.0)
     lc  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per, a=ars18b, i=inc18b)
-    #with _lock:
+  
     fig_lc_plt = plt.figure('lc_plt')
     lc_plt = plt.plot(t, lc, '-o')
     plt.ylabel('Relative signal')
@@ -280,7 +283,7 @@ if section2==3:
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=per18b, a=ars18b, i=inc18b, e=ecc18b, w=w18b) #K2-18 b
     lc1260d  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=49.8251659648395, a=ars18b, i=inc18b, e=ecc18b, w=w18b) #TOI-1260 d
 
-    #with _lock:
+ 
     fig_lcs_per = plt.figure('lcs_per')
 
     lc83c = plt.plot(t,lc83c, '-o', label='K2-83 c') #K2-83 c
@@ -304,7 +307,7 @@ if section2==3:
     selected_option2_3_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_1')
     # Check the selected option
     if selected_option2_3_1 == "1":
-        st.write("Correct! :)")
+        st.write("Correct! TOI-1260 d is the planet that has the longest period :)")
     else:
         # Provide a hint
         if selected_option2_3_1 == "0":
@@ -322,7 +325,7 @@ if section2==3:
     selected_option2_3_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_2')
     # Check the selected option
     if selected_option2_3_2 == "3":
-        st.write("Correct! :)")
+        st.write("Correct! TOI-1260 d is the planet that has the shortest transit duration :)")
     else:
         # Provide a hint
         if selected_option2_3_2 == "0":
@@ -337,20 +340,20 @@ if section2==3:
         st.markdown("You've seen used the hint power-up! Your hint is: remember that shorter periods result in shorter transit durations. Use it wisely!")
         st.markdown('---')
  
-    question2_3_3 = "From the plot above, which planet has the shortest transit duration?"
+    question2_3_3 = "From the plot above, which planet would have the fewest frequency of transit events?"
     st.write(question2_3_3)
     options2_3_3=["TRAPPIST-1 h", "K2-83 c", "K2-18 b", "TOI-1260 d"]
     st.write(options2_3_3)
      # Display Question 2.3.3 and options
     selected_option2_3_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_3')
     # Check the selected option
-    if selected_option2_3_3 == "1":
-        st.write("Correct! :)")
+    if selected_option2_3_3 == "3":
+        st.write("Correct! TOI-1260 d would have the fewest frequency of transit events :)")
     else:
         # Provide a hint
         if selected_option2_3_3 == "0":
             st.write("Try again! Have another look at the plot above.")
-        elif selected_option2_3_3 == "3":
+        elif selected_option2_3_3 == "1":
             st.write("Try again! Have another look at the plot above.")
         elif selected_option2_3_3 == "2":
             st.write("Try again! Have another look at the plot above.")
@@ -368,15 +371,15 @@ if section2==3:
     selected_option2_3_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_3_4')
     # Check the selected option
     if selected_option2_3_4 == "0":
-        st.write("Correct! :)")
+        st.write("Correct! The exoplanet would have an orbital period of 32.9 days :) You've gained the key that unlocks the next mission!")
     else:
         # Provide a hint
         if selected_option2_3_4 == "1":
             st.write("Try again! Have another look at the question above.")
         elif selected_option2_3_4 == "2":
-            st.write("Try again! Have another look at the question above.")
+            st.write("Try again! Re-read the question!")
         elif selected_option2_3_4 == "3":
-            st.write("Try again! Have another look at the question above.")
+            st.write("Try again! Have another read of the question above.")
     hint2_3_4 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_3_4')
     if hint2_3_4:
         st.markdown('---')
@@ -384,6 +387,7 @@ if section2==3:
         st.markdown('---')
 
 if section2==4:
+    st.write('Mission Four objective: What can you find out from a transit?')
     st.write('Astronomers love to find patterns and if you see that a dip in brightness happens regularly then you can start to predict when the next dip will occur because then you are most likely looking at the orbit of a planet!')
     tlong=np.linspace(0,5,10000)
     tm.set_data(tlong)
@@ -401,9 +405,10 @@ if section2==4:
     plt.minorticks_on()
     plt.grid(which='minor', linestyle=':', linewidth='0.5', color='gray')
     st.pyplot(fig_tlong_plt)
-    
+
+    st.write('Use the plot below to answer the following questions!')
     lc18b  = tm.evaluate(k=rp_rs18b, ldc=gamma18b, t0=t0_18b, p=2.00, a=ars18b*0.05, i=inc18b)
-    #with _lock:
+    
     fig_tlong_lc18b = plt.figure('tlong_lc18b')
     tlong_lc18b = plt.plot(tlong,lc18b, '-o')
     plt.xlim(0, 5)
@@ -424,7 +429,7 @@ if section2==4:
     selected_option2_4_1 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_1')
     # Check the selected option
     if selected_option2_4_1 == "2":
-        st.write("Correct! :)")
+        st.write("Correct! The period of the exoplanet's orbit is approximately 172800 seconds :)")
     else:
         # Provide a hint
         if selected_option2_4_1 == "0":
@@ -447,7 +452,7 @@ if section2==4:
     selected_option2_4_2 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_2')
     # Check the selected option
     if selected_option2_4_2 == "1":
-        st.write("Correct! :)")
+        st.write("Correct! The depth of the transit is 0.0025 :)")
     else:
         # Provide a hint
         if selected_option2_4_2 == "0":
@@ -470,7 +475,7 @@ if section2==4:
     selected_option2_4_3 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_3')
     # Check the selected option
     if selected_option2_4_3 == "3":
-        st.write("Correct! :)")
+        st.write("Correct! 5/2 transits are observed within the given timeframe :)")
     else:
         # Provide a hint
         if selected_option2_4_3 == "0":
@@ -493,7 +498,7 @@ if section2==4:
     selected_option2_4_4 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_4')
     # Check the selected option
     if selected_option2_4_4 == "1":
-        st.write("Correct! :)")
+        st.write("Correct! The average transit duration of the exoplanet is approximately 0.8 days based on the observed transit events :)")
     else:
         # Provide a hint
         if selected_option2_4_4 == "0":
@@ -505,7 +510,7 @@ if section2==4:
     hint2_4_4 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_4')
     if hint2_4_3:
         st.markdown('---')
-        st.markdown("You've used the hint power-up! Your hint is: alculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
+        st.markdown("You've used the hint power-up! Your hint is: calculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
         st.markdown('---')
 
     question2_4_5 = "What is the transit depth ratio between two consecutive transit events?"
@@ -516,7 +521,7 @@ if section2==4:
     selected_option2_4_5 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_5')
     # Check the selected option
     if selected_option2_4_5 == "0":
-        st.write("Correct! :)")
+        st.write("Correct! The transit depth ratio between two consective transit events is 2.5x10^-3 :)")
     else:
         # Provide a hint
         if selected_option2_4_5 == "1":
@@ -528,7 +533,7 @@ if section2==4:
     hint2_4_5 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_5')
     if hint2_4_5:
         st.markdown('---')
-        st.markdown("You've used the hint power-up! Your hint is: alculate the average duration by summing the durations of all transit events and dividing by the total number of events. Use it wisely!")
+        st.markdown("You've used the hint power-up! Your hint is: calculate the transit depth ratio by dividing the depth of one transit event by the depth of the previous events. Use it wisely!")
         st.markdown('---')
 
     question2_4_6 = "What can scientists learn about an exoplanet from its transit?"
@@ -539,15 +544,15 @@ if section2==4:
     selected_option2_4_6 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_6')
     # Check the selected option
     if selected_option2_4_6 == "3":
-        st.write("Correct! :)")
+        st.write("Correct! Scientists can learn about an exoplanet's surface temperature, atmospheric composition, size and orbit all from its transit :)")
     else:
         # Provide a hint
         if selected_option2_4_6 == "0":
-            st.write("Try again! Have another look at the mission details above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
         elif selected_option2_4_6 == "1":
-            st.write("Try again! Have another look at the mission detials above.")
+            st.write("Try again! Have another look at the Mission Four detials above.")
         elif selected_option2_4_6 == "2":
-            st.write("Try again! Have another look at the mission details above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
 
     question2_4_7 = "How do astronomers determine the characteristics of an exoplanet using the transit method?"
     st.write(question2_4_7)
@@ -557,15 +562,15 @@ if section2==4:
     selected_option2_4_7 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_7')
     # Check the selected option
     if selected_option2_4_7 == "3":
-        st.write("Correct! :)")
+        st.write("Correct! Astronomers determine the characteristics of an exoplanet by studying the duration and depth of the transit event using the transit method :)")
     else:
         # Provide a hint
         if selected_option2_4_7 == "0":
-            st.write("Try again! Have another look at the mission details above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
         elif selected_option2_4_7 == "1":
-            st.write("Try again! Have another look at the mission detials above.")
+            st.write("Try again! Have another look at the Mission Four detials above.")
         elif selected_option2_4_7 == "2":
-            st.write("Try again! Have another look at the mission details above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
     hint2_4_7 = st.checkbox("Need to use a hint power-up?", value=False, key='hint2_4_7')
     if hint2_4_7:
         st.markdown('---')
@@ -580,15 +585,15 @@ if section2==4:
     selected_option2_4_8 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_8')
     # Check the selected option
     if selected_option2_4_8 == "0":
-        st.write("Correct! :)")
+        st.write("Correct! The time between each dip can tell you about the exoplanet's distance from its star and orbital period :)")
     else:
         # Provide a hint
         if selected_option2_4_8 == "1":
-            st.write("Try again! Have another look at the mission details above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
         elif selected_option2_4_8 == "2":
-            st.write("Try again! Have another look at the mission detials above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
         elif selected_option2_4_8 == "3":
-            st.write("Try again! Have another look at the mission details above.")
+            st.write("Try again! Have another look at the Mission Four details above.")
     
     question2_4_9 = "How could you work out the size of the planet?"
     st.write(question2_4_9)
@@ -598,7 +603,7 @@ if section2==4:
     selected_option2_4_9 = st.text_input("Type the number (0-3) corresponding to your solution:", key='q2_4_9')
     # Check the selected option
     if selected_option2_4_9 == "2":
-        st.write("Correct! :)")
+        st.write("Correct! You can work out the size of the planet by comparing the depth of the transit to the size of the star :) Level Two complete!")
     else:
         # Provide a hint
         if selected_option2_4_9 == "0":
