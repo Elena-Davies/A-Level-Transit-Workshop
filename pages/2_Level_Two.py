@@ -3,12 +3,12 @@ import streamlit as st
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import pytransit
+import PyTransit
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
 
 #import PyTransit and some key modules
-from pytransit import QuadraticModel
+from PyTransit import QuadraticModel
 # from pytransit import UniformModel
 import numpy as np
 import matplotlib.pyplot as plt
