@@ -3,7 +3,6 @@ import streamlit as st
 import matplotlib as mpl
 # use the non-interactive Agg backend to be more thread safe
 mpl.use("agg")
-#_lock = RendererAgg.lock
 
 st.markdown("# Level One: Uncovering The Transit Method")
 st.sidebar.header("Level One")
