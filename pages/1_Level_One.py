@@ -55,7 +55,8 @@ if section1==1:
     
 
 if section1==2:
-    
+    # Add text
+    st.write('# Mission Two objective: Find out how the transit method works.')
     st.video('Images/planet_orbit_animation1.mp4')
 
     st.markdown("The animation above shows a planet orbiting a star!")
